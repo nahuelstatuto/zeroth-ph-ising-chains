@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code, please cite the paper below."
 title: "Zeroth persistent homology of ground-state correlations: code"
 authors:
-  - family-names: Belchi
+  - family-names: Belchí
     given-names: Francisco
     affiliation: "Universitat Ramon Llull, La Salle Campus Barcelona"
   - family-names: Statuto
@@ -17,7 +17,7 @@ preferred-citation:
   type: article
   title: "Zeroth persistent homology of ground-state correlations at clean and disordered quantum transitions"
   authors:
-    - family-names: Belchi
+    - family-names: Belchí
       given-names: Francisco
     - family-names: Statuto
       given-names: Nahuel

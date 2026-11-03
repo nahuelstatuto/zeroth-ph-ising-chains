@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "Zeroth persistent homology of ground-state correlations in clean and random Ising chains (code of the paper)"
 readme = "README.md"
 license = { text = "MIT" }
-authors = [{ name = "Francisco Belchi" }, { name = "Nahuel Statuto" }]
+authors = [{ name = "Francisco Belchí" }, { name = "Nahuel Statuto" }]
 requires-python = ">=3.10"
 dependencies = [
   "numpy>=1.23",

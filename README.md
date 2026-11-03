@@ -4,7 +4,7 @@
 
 Code accompanying
 
-> F. Belchi and N. Statuto, *Zeroth persistent homology of ground-state correlations at clean and
+> F. Belchí and N. Statuto, *Zeroth persistent homology of ground-state correlations at clean and
 > disordered quantum transitions* (submitted to Phys. Rev. B).
 
 The repository contains everything needed to recompute the results of the paper: the simulation code
@@ -117,5 +117,5 @@ Code under the MIT license (`LICENSE`). The data in `paper_figures/*/data_raw/` 
 ## Citation
 
 See `CITATION.cff`. If you use this code, please cite the paper and the archived code,
-F. Belchi and N. Statuto, *Zeroth persistent homology of ground-state correlations: code*, Zenodo,
+F. Belchí and N. Statuto, *Zeroth persistent homology of ground-state correlations: code*, Zenodo,
 doi:[10.5281/zenodo.23915648](https://doi.org/10.5281/zenodo.23915648).
