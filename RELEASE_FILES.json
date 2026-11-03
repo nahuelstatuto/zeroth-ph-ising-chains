@@ -77,6 +77,7 @@
   "run_random_ising_gamma_scan.py",
   "run_sdrg_disorder_strength_review_v3.py",
   "run_sdrg_rg_scale_purity_review_v3.py",
+  "sdrg_modularity_cut_review_v3.py",
   "test_connected_correlator_even_review_v2.py",
   "test_connected_correlator_review_v1.py",
   "test_correlator_choice_review_v1.py",
@@ -101,6 +102,7 @@
   "scripts\\analyze_flags_near_maxima_review_v3.py",
   "scripts\\analyze_free_fermion_h0_review_v1.py",
   "scripts\\analyze_h1_factorized_control_review_v3.py",
+  "scripts\\analyze_pbc_ed_H1_weaklink_controls_v2v3.py",
   "scripts\\analyze_pbc_reentrant_ED_parity.py",
   "scripts\\analyze_per_realization_pseudocritical_review_v3.py",
   "scripts\\analyze_random_h0_irfp_pseudocritical_scaling.py",
@@ -136,6 +138,10 @@
   [
    "ROOT = HERE\\.parents\\[5\\]",
    "ROOT = next(p for p in HERE.parents if (p / \"results\").is_dir())"
+  ],
+  [
+   "Path\\(\"C:/Users/[^\"]*/(results_[\\w]+)\"\\)",
+   "ROOT / \"results\" / \"\\1\""
   ]
  ]
 }

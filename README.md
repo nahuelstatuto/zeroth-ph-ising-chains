@@ -61,8 +61,10 @@ The pipeline has four stages.
    - DMRG scans of the random chain (reentrant regime): `scripts/run_random_ising_gamma_ensemble.py`
      (drives `run_random_ising_gamma_scan.py`), with the parameters of `campaign_specs/`.
    - Exact diagonalization of the periodic rings: `scripts/run_pbc_reentrant_ED_parity.py`.
-2. **Analyses** (`scripts/analyze_*.py`, `benchmark_*.py`, `compare_*.py`, `check_*.py`) read
-   `results/` and write `summary.json` files next to their outputs.
+2. **Analyses** (`scripts/analyze_*.py`, `benchmark_*.py`, `compare_*.py`, `check_*.py`, `sdrg_*.py`)
+   read `results/` and write `summary.json` files next to their outputs. Some of them, as
+   `sdrg_modularity_cut_review_v3.py` (modularity cut and HDBSCAN of the $H_0$ tree against the
+   SDRG clusters, Table S2), recompute the exact free-fermion state themselves.
 3. **Figure data**: `paper_figures/<figure>/prepare_*.py` collect the inputs of each figure into
    `data_raw/` and record their hashes in `source_manifest.json`.
 4. **Figures**: `paper_figures/<figure>/make_*.py` or the notebook of the same folder draw the figure
