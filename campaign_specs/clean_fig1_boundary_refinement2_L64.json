@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "description": "Minimal lower-Gamma extension for the two grid-limited indicators remaining after combining clean-fig1-bound-L64-c128-v1 and clean-fig1-refine-L64-c128-v1.",
+  "source": "Combined boundary analysis of clean-fig1-refine-L64-c128-v1",
+  "points": [
+    {
+      "h": 0.6,
+      "Gamma_center": 0.841,
+      "Gamma_values": [
+        0.821,
+        0.831,
+        0.841,
+        0.851
+      ]
+    },
+    {
+      "h": 1.9,
+      "Gamma_center": 0.074,
+      "Gamma_values": [
+        0.064,
+        0.074
+      ]
+    }
+  ]
+}

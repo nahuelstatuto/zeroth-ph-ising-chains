@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "physical_gate_failed_holdout_not_launched",
+  "created_date": "2026-09-15",
+  "scientific_question": "Does local H1 identify anomalously soft disorder realizations at a fixed physical distance from the PBC reentrant exit, consistently across finite sizes?",
+  "conditions": {
+    "bc": "periodic",
+    "ensemble": "fixed_mean",
+    "h": 2.5,
+    "sizes": [12, 14, 16, 18],
+    "matrix": "C=Cstag",
+    "filtration": "D=1-C downstream",
+    "spectral_levels": 8,
+    "window_length": 6,
+    "holdout_seeds": [1300, 1349],
+    "holdout_seed_count": 50,
+    "delta_Gamma0": [-0.025, 0.0, 0.025]
+  },
+  "physical_discovery": {
+    "initial_seeds": [1100, 1199],
+    "initial_seed_count": 100,
+    "initial_gamma_grid": [0.15, 0.6, 0.0125],
+    "summary": "results/random_ising_gamma_ensemble/pbc-ed-frontier-union-s1100-1199-v1/analysis/summary.json",
+    "summary_sha256": "7058d462abd83e1e0e7890920c835872d08bf213ef9bae0f41f85051622f04f3",
+    "boundaries_sha256": "cdf3c06fcf967700224425ee33635823fcb0648e788b15caaf02025590431ca3",
+    "gate": "mean right zero crossing finite and at least 95 percent of seed-bootstrap replicas finite for every L",
+    "initial_gate_result": {
+      "pass": false,
+      "failed_sizes": [18],
+      "L18_finite_bootstrap_fraction": 0.91675
+    },
+    "L18_reinforcement": {
+      "slurm_job_id": 2406,
+      "release": "/mnt/beegfs/nstatuo/tn-tda/releases/20260915-pbc-ed-decisive-v1",
+      "seeds": [1200, 1299],
+      "seed_count": 100,
+      "gamma_grid": [0.15, 0.4, 0.0125],
+      "reason": "The L18 mean curve crosses inside the old grid, but its positive ordered-side amplitude is not resolved sufficiently often under bootstrap; more independent samples, not a wider Gamma0 range, are required.",
+      "guardrail": "No H1 or spectral-gap data from the final holdout may be inspected before Gamma_exit(L) is frozen."
+    },
+    "final_gate_result": {
+      "pass": false,
+      "analysis": "results/random_ising_gamma_ensemble/pbc-ed-frontier-L18-s1100-1299-v1/analysis/summary.json",
+      "analysis_sha256": "bc9acfbc10b82b1934c094f92666a73baa75860b4e70acef1374c19a393b6662",
+      "L18_seed_count": 200,
+      "Gamma0_exit_of_combined_mean": 0.310809207420349,
+      "bootstrap_interval_finite_replicates": [0.18599954705115354, 0.3685167748613786],
+      "bootstrap_finite_fraction": 0.80605,
+      "required_finite_fraction": 0.95,
+      "holdout_launched": false,
+      "diagnostic": "The reinforcement cohort mean is non-positive throughout the frozen grid; the signed r=9 locator is not stable across independent disorder cohorts."
+    }
+  },
+  "freeze_rule": {
+    "L12_L14_L16": "retain the physical estimates from the 100-seed discovery cohort",
+    "L18": "combine complete trajectories for seeds 1100-1299 on Gamma0=0.15...0.4 and apply the same right-zero-crossing estimator and 95 percent bootstrap gate",
+    "on_pass": "write the four numerical Gamma_exit(L) values and their source hashes into this specification before submitting any holdout spectra",
+    "on_fail": "do not launch the spectral holdout and report the physical locator as unresolved"
+  },
+  "primary_tests": [
+    "geometric gap ratio H1-positive versus H1-negative after removing each (L,delta_Gamma0) stratum mean from log(gap01)",
+    "stratified AUC of continuous H1 maximum lifetime for predicting the bottom quartile of gap01 within each (L,delta_Gamma0) stratum"
+  ],
+  "inference": {
+    "H1_binary_label": "H1_max_lifetime_w6 > 1e-8",
+    "low_gap_label": "gap01 at or below the empirical 25th percentile inside each of the 12 frozen (L,delta_Gamma0) strata",
+    "resampling_unit": "the complete three-delta trajectory of one seed within one L",
+    "permutation_rule": "permute complete H1 trajectories among the 50 seeds separately within each L, preserving the dependence across delta_Gamma0",
+    "permutation_replicates": 200000,
+    "cluster_bootstrap_rule": "resample the 50 seed trajectories with replacement separately within each L and retain all three delta_Gamma0 observations",
+    "cluster_bootstrap_replicates": 20000,
+    "multiple_testing": "Holm correction across the two co-primary one-sided tests at family-wise alpha=0.05",
+    "direction": "H1 predicts smaller gap01",
+    "secondary_tests": [
+      "H1-by-L interaction in log(gap01) with (L,delta_Gamma0) fixed effects and seed-trajectory cluster bootstrap",
+      "adjustment for bulk_ms2, selected-window mean J, selected-window mean Gamma and cyclic window position",
+      "per-size and per-delta effect estimates with confidence intervals, reported without selecting a favorable subset"
+    ]
+  },
+  "interpretation_rule": {
+    "supports_main_claim": "H1 enriches low-gap samples in the independent holdout after stratification and remains informative in the preregistered controls.",
+    "supports_limited_claim": "The effect is present only at selected sizes or is absorbed by physical/disorder controls; report H1 as a finite-size geometric correlate.",
+    "negative_result": "No reproducible out-of-sample low-gap enrichment; retain the h=0 paper and present reentrant topology as a documented limitation or move it to the supplement."
+  }
+}

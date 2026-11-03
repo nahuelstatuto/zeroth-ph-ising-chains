@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "description": "Fine high-bond-dimension scan of the L=64 OBC pseudocritical region at h=1.95.",
+  "source": "Analysis of clean-h195-refine-L64-c256-v1",
+  "points": [
+    {
+      "h": 1.95,
+      "Gamma_center": 0.03,
+      "Gamma_values": [
+        0.02,
+        0.025,
+        0.03,
+        0.035,
+        0.04
+      ]
+    }
+  ]
+}

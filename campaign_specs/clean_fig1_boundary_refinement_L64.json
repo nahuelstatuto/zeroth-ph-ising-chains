@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "description": "Three-point lower-Gamma refinement around the L=64 OBC indicators found in clean-fig1-bound-L64-c128-v1.",
+  "source": "Analysis of clean-fig1-bound-L64-c128-v1",
+  "points": [
+    {
+      "h": 0.2,
+      "Gamma_center": 0.932,
+      "Gamma_values": [
+        0.922,
+        0.932,
+        0.942
+      ]
+    },
+    {
+      "h": 0.4,
+      "Gamma_center": 0.91,
+      "Gamma_values": [
+        0.9,
+        0.91,
+        0.92
+      ]
+    },
+    {
+      "h": 0.6,
+      "Gamma_center": 0.871,
+      "Gamma_values": [
+        0.861,
+        0.871,
+        0.881
+      ]
+    },
+    {
+      "h": 1.4,
+      "Gamma_center": 0.539,
+      "Gamma_values": [
+        0.529,
+        0.539,
+        0.549
+      ]
+    },
+    {
+      "h": 1.6,
+      "Gamma_center": 0.393,
+      "Gamma_values": [
+        0.383,
+        0.393,
+        0.403
+      ]
+    },
+    {
+      "h": 1.8,
+      "Gamma_center": 0.218,
+      "Gamma_values": [
+        0.208,
+        0.218,
+        0.228
+      ]
+    },
+    {
+      "h": 1.9,
+      "Gamma_center": 0.094,
+      "Gamma_values": [
+        0.084,
+        0.094,
+        0.104
+      ]
+    }
+  ]
+}

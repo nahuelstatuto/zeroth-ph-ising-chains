@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-02T11:50:11.476207+00:00",
+  "generator": "paper_figures/fig_clean_h0/prepare_data.py (V1, refined maxima added in review v3)",
+  "conventions": "OBC; h=0; clean J=1; C=Cstag raw; topology on D=1-C; exact free fermions",
+  "files": [
+    {
+      "file": "clean_h0_exact.npz",
+      "sha256": "61149287ebf75c9fe3f47100470dcc717150696c9a627b0f53fd886b383182ea",
+      "size_bytes": 122790
+    },
+    {
+      "file": "clean_h0_refined_peaks.npz",
+      "sha256": "09fce7a784024adfc6dbe57ee7605f1fa1d2971841039f123f366e70cbd61384",
+      "size_bytes": 687
+    }
+  ],
+  "sources": [
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\clean_L16.npz",
+      "sha256": "d501b4af8acf3177437769534fdbb41d198cf2c840e994cabeceb2b418a8ae5f"
+    },
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\clean_L32.npz",
+      "sha256": "5d088f3d6b413e876fa23dbd2699d32b9ea19d8fe90c533a61bd738a23f2f5cc"
+    },
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\clean_L64.npz",
+      "sha256": "4e8b3aa50a57eaddcdc8a18dc3b46353bdef868711d3ae5d2a15b2187dd7e6ab"
+    },
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\clean_L128.npz",
+      "sha256": "835272bff9d8a3a5afa7fac827ea549e7a442ae341b38df8aebe7aefe4a70a4e"
+    },
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\clean_L256.npz",
+      "sha256": "24ef3c1c221f2f3e71b01ac22f5659507356360580360201e94e9cba7e6d1aba"
+    },
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\clean_L512_full.npz",
+      "sha256": "bab7fdd44130c310c26efe895c662637ed3b6b2cb46da44b79cfa5c253574c32"
+    },
+    {
+      "path": "results\\review_v3\\clean-fss-systematics-v1\\summary.json",
+      "sha256": "ea3dc6699840ab5c28f7a782c03fb904dde321773b0e9f3fa52d2ebfb41c3d1b"
+    }
+  ]
+}

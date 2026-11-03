@@ -1,0 +1,64 @@
+{
+  "schema_version": 3,
+  "spec_filename": "pbc_reentrant_bulk_matched_H1_replication_v3.json",
+  "status": "independent_replication_frozen_authorized",
+  "created_date": "2026-09-16",
+  "scientific_question": "Does an independent second cohort replicate the H1 soft-gap association and make the controlled H1 contribution identifiable?",
+  "relationship_to_v2": {
+    "previous_spec": "campaign_specs/pbc_reentrant_bulk_matched_H1_holdout_v2.json",
+    "previous_result": "limited_positive",
+    "previous_summary": "results/random_ising_gamma_ensemble/pbc-reentrant-H1-ED-bulk-matched-s1300-1349-v2/analysis/summary.json",
+    "previous_summary_sha256": "e6bf68a86e05979311863af11712ee747141759db5d10febc01a52c6cf8d4bb6",
+    "separation": "Seeds 1350--1399 are new. Their spectra and H1 labels did not exist when this specification was frozen. No threshold, field, offset, observable or control is retuned."
+  },
+  "conditions": {
+    "bc": "periodic",
+    "ensemble": "fixed_mean",
+    "h": 2.5,
+    "sizes": [12, 14, 16, 18],
+    "matrix": "C=Cstag",
+    "filtration": "D=1-C downstream",
+    "spectral_levels": 8,
+    "window_length": 6,
+    "H1_binary_threshold": 1e-8,
+    "holdout_seeds": [1350, 1399],
+    "holdout_seed_count": 50,
+    "delta_Gamma0": [-0.025, 0.0, 0.025],
+    "total_cases": 600
+  },
+  "frozen_Gamma_reference": {
+    "12": 0.38426759366264435,
+    "14": 0.3008267757900888,
+    "16": 0.32080937140061216,
+    "18": 0.348437315145519
+  },
+  "co_primary_endpoints": [
+    "geometric gap ratio H1-positive versus H1-negative after removing each (cohort,L,delta_Gamma0) stratum mean from log(gap01)",
+    "stratified AUC of continuous H1 maximum lifetime for predicting the bottom quartile of gap01 within each (cohort,L,delta_Gamma0) stratum"
+  ],
+  "inference": {
+    "H1_binary_label": "H1_max_lifetime_w6 > 1e-8",
+    "low_gap_label": "gap01 at or below the empirical 25th percentile inside each frozen cohort-by-(L,delta_Gamma0) stratum",
+    "resampling_unit": "the complete three-delta trajectory of one seed within one L and cohort",
+    "permutation_rule": "permute complete H1 trajectories among seeds separately within each L and cohort",
+    "permutation_replicates": 200000,
+    "cluster_bootstrap_rule": "resample seed trajectories with replacement separately within each L and cohort",
+    "cluster_bootstrap_replicates": 20000,
+    "multiple_testing": "Holm correction across the two co-primary one-sided tests at family-wise alpha=0.05",
+    "direction": "larger H1 predicts smaller gap01",
+    "controls": [
+      "bulk_ms2",
+      "selected-window mean J",
+      "selected-window mean Gamma",
+      "cyclic window position",
+      "cohort fixed effect"
+    ],
+    "heterogeneity_test": "H1-by-cohort interaction with seed-trajectory cluster bootstrap"
+  },
+  "decision_rule": {
+    "strong_positive_upgrade": "The combined v2+v3 co-primary tests pass after Holm correction, the controlled H1 coefficient has a 95% cluster-bootstrap interval strictly below zero, and there is no significant reversal in the v3 cohort or significant H1-by-cohort heterogeneity.",
+    "replicated_limited_positive": "The v3 effect has the predicted sign and the combined co-primary tests pass, but the controlled interval still includes zero.",
+    "not_replicated": "The v3 cohort reverses the association significantly or neither combined co-primary endpoint passes.",
+    "guardrail": "Analyze all 600 v3 cases together. Do not select favorable sizes or offsets, alter H1 definitions, or inspect partial results."
+  }
+}

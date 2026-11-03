@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-02T10:14:32.595250+00:00",
+  "generator": "paper_figures/fig_sdrg_purity/prepare_data.py (review v3)",
+  "conventions": "OBC; h=0; Gamma0=1; C=Cstag raw; topology on D=1-C; Pauli operators; exact free fermions; box = fixed_mean J in [1,2]; delta family = fixed mean logarithms",
+  "files": [
+    {
+      "file": "sdrg_hierarchy_box.npz",
+      "sha256": "16bb10d79ac83a4b372f04d290f5581e32dc46d0fe968cc5b6b995928162db65",
+      "size_bytes": 68083
+    },
+    {
+      "file": "sdrg_purity_delta.npz",
+      "sha256": "ba84b5ad7b44af6e1e3aa49be3d0042759809483703c19bcee65dbfe8499941a",
+      "size_bytes": 127517
+    }
+  ],
+  "sources": [
+    {
+      "path": "results\\review_v1\\sdrg-vs-h0-v1\\hierarchy_per_realization.npz",
+      "sha256": "16bb10d79ac83a4b372f04d290f5581e32dc46d0fe968cc5b6b995928162db65"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.25_L32.npz",
+      "sha256": "0838de1743b271bfda0acb9ea94e55a82dcf04b8040a95be7ad0159b34288f36"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.25_L64.npz",
+      "sha256": "089a204b8a10dbd640b326e21c3c001e83e34974e39a5cb3c4226bbf767b8e98"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.25_L128.npz",
+      "sha256": "0d6769a518850ae16302d69e34dc48deba7799cfadf03ea8b493121b12e11b17"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.25_L256.npz",
+      "sha256": "5f493f7282b768964727cadcabc4f0134a063dcd89395faf64d46a78de65c74e"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.5_L32.npz",
+      "sha256": "2d2e877accbf3d2c2c3478001e26ecedda3707bff6abbd44c538abb47337eaa8"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.5_L64.npz",
+      "sha256": "140d1d0ec00a9af8274fe98b8c4d5288a6f5fb066edc8539d55398d255009682"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.5_L128.npz",
+      "sha256": "6fd7af8becab042ad8896e073d85d902a2a202ff076af166c6ad449ec1176209"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.5_L256.npz",
+      "sha256": "e3b3c9f5dd68cfbac471724a0343be56c39e2907e31c257e85d3de623d01313d"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.75_L32.npz",
+      "sha256": "ca6bee2b28e63b2c755dbdd150cb0839527c7a8ff34d489596c3d8cd71577b92"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.75_L64.npz",
+      "sha256": "6702245827507fd504634f9f90bb8b0e9359f27bae25a3e38395fba87d09b1da"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.75_L128.npz",
+      "sha256": "f0cd296c547c0e7098f62e68d19ed545d99e67f3e8d7269dda2d099fb3ebb2a9"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d0.75_L256.npz",
+      "sha256": "0c6e0326c761837b9c04e84b6de697d60e74d26c702956aa680b68658d1c7e0e"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d1_L32.npz",
+      "sha256": "8feb2d5afe6cabb322ea7b5b2a6100c6084a55e64ff03b5779e454167e970c0f"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d1_L64.npz",
+      "sha256": "67d3c8243631afdb78a5335efd2793898439c88067e9a7299a0544ab2684e785"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d1_L128.npz",
+      "sha256": "d7152d7d38f44f183f991566db42446e8aa248b5f89686e87eecc01f3f574d8f"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d1_L256.npz",
+      "sha256": "a0881544da5f07b71183a92e1e9d48788ea7b85248a69cd39872c7af65e6b136"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d1.5_L32.npz",
+      "sha256": "2ef51ebe5d0e0ba5e5351f4b4daac2ab218e3d7ace9067fdf6e4e68ef641ee70"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d1.5_L64.npz",
+      "sha256": "cd884ab4ea085c93493d35b273c1c707641cdc40d5c144564b16f7e0bf8b3e6f"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d1.5_L128.npz",
+      "sha256": "dbfc44569ae59b98db97ad1ff9ebe1b12b60910f24474e45314507251368e6be"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d1.5_L256.npz",
+      "sha256": "47473dd7d1a5c25208932400d76fbf5c991b1d6b221267a0fdff1eeee55440b6"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d2_L32.npz",
+      "sha256": "84398c6385b34efa1891e70f57dd33309e61aa9abdbff463156a55729b3a1dc9"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d2_L64.npz",
+      "sha256": "e32127c48f76ccb648ccd898ac4991e0b70953417dacfa4c227fbfb6e482e1ec"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d2_L128.npz",
+      "sha256": "6301c5217def5ba532aefc3ee37174ae1ac7886849dd80f5795a7af2e6bb5d06"
+    },
+    {
+      "path": "results\\review_v3\\sdrg-disorder-strength-v1\\fixed_logmean_d2_L256.npz",
+      "sha256": "4985b41af881bf4d95809dd90268cfded7f0dda8ece652cd7828625d8da7f4a3"
+    }
+  ]
+}

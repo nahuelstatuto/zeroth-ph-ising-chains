@@ -1,0 +1,37 @@
+# Matplotlib style of every paper figure (paper_figures_claude).
+#
+# Loaded by paper_style.apply_style(), which every figure script and notebook
+# calls first. Change a value here and re-run the notebooks: all figures follow.
+# Colors per system size, physics/topology colors and figure sizes live in
+# paper_style.py (they are not rcParams).
+
+# ---- text -------------------------------------------------------------------
+font.size           : 10
+axes.labelsize      : 11
+legend.fontsize     : 8.2
+xtick.labelsize     : 9
+ytick.labelsize     : 9
+mathtext.fontset    : stix
+
+# ---- lines and markers ------------------------------------------------------
+lines.linewidth     : 1.6
+lines.markersize    : 3.5
+
+# ---- axes ---------------------------------------------------------------------
+axes.spines.top     : False
+axes.spines.right   : False
+
+# ---- output (save_figure also passes dpi=300 and bbox_inches="tight") -------
+savefig.dpi         : 300
+savefig.bbox        : tight
+
+# ---- optional knobs (uncomment to use) ------------------------------------
+# font.family         : serif          # serif text, closer to REVTeX body
+# font.serif          : STIX Two Text, Times New Roman, DejaVu Serif
+# axes.linewidth      : 0.8            # thinner frame
+# xtick.direction     : in             # ticks inside the axes
+# ytick.direction     : in
+# legend.frameon      : False          # legends without box
+# axes.grid           : True           # light grid on every panel
+# grid.alpha          : 0.2
+# figure.dpi          : 120            # on-screen size in notebooks only

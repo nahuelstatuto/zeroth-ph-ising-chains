@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "status": "physical_reference_frozen_holdout_authorized",
+  "created_date": "2026-09-16",
+  "scientific_question": "At the same finite-size distance from the bulk-response crossover, does local H1 identify disorder realizations with anomalously soft spectra?",
+  "relationship_to_v1": {
+    "previous_spec": "campaign_specs/pbc_reentrant_decisive_holdout_v1.json",
+    "previous_result": "physical_gate_failed_holdout_not_launched",
+    "separation": "This is a new physical-only design. The failed signed far-correlation gate is retained and is not reinterpreted. No seed 1300-1349 spectrum or H1 label existed when this v2 reference was frozen."
+  },
+  "conditions": {
+    "bc": "periodic",
+    "ensemble": "fixed_mean",
+    "h": 2.5,
+    "sizes": [12, 14, 16, 18],
+    "matrix": "C=Cstag",
+    "filtration": "D=1-C downstream",
+    "spectral_levels": 8,
+    "window_length": 6,
+    "H1_binary_threshold": 1e-8,
+    "holdout_seeds": [1300, 1349],
+    "holdout_seed_count": 50,
+    "delta_Gamma0": [-0.025, 0.0, 0.025],
+    "total_cases": 600
+  },
+  "physical_reference": {
+    "definition": "interior maximum of -d mean(bulk_ms2)/dGamma0, with the frozen three-point local quadratic refinement",
+    "interpretation": "finite-size bulk-response crossover, not an exact signed boundary and not a thermodynamic critical point",
+    "frozen_Gamma_reference": {
+      "12": 0.38426759366264435,
+      "14": 0.3008267757900888,
+      "16": 0.32080937140061216,
+      "18": 0.348437315145519
+    },
+    "bootstrap_95_intervals": {
+      "12": [0.34575254925908094, 0.4242812324385174],
+      "14": [0.2749521661882373, 0.3760283790114392],
+      "16": [0.2607152709291332, 0.37718324693404026],
+      "18": [0.2753824540237245, 0.37188123977488524]
+    },
+    "seed_counts": {"12": 100, "14": 100, "16": 100, "18": 200},
+    "all_point_estimates_interior": true,
+    "sources": {
+      "L12_L14_L16_summary": "results/random_ising_gamma_ensemble/pbc-ed-frontier-union-s1100-1199-v1/analysis/summary.json",
+      "L12_L14_L16_summary_sha256": "7058d462abd83e1e0e7890920c835872d08bf213ef9bae0f41f85051622f04f3",
+      "L18_summary": "results/random_ising_gamma_ensemble/pbc-ed-frontier-L18-s1100-1299-v1/analysis/summary.json",
+      "L18_summary_sha256": "684a93955ae21bc105a0febd06833b7aa83bd98c88f4b64cfd62cf6ab847a22c"
+    },
+    "guardrail": "The broad intervals are reported as uncertainty in the finite-size crossover. The three delta values probe a local neighborhood and are not asserted to lie definitively in separate thermodynamic phases."
+  },
+  "frozen_Gamma_reference": {
+    "12": 0.38426759366264435,
+    "14": 0.3008267757900888,
+    "16": 0.32080937140061216,
+    "18": 0.348437315145519
+  },
+  "co_primary_endpoints": [
+    "geometric gap ratio H1-positive versus H1-negative after removing each (L,delta_Gamma0) stratum mean from log(gap01)",
+    "stratified AUC of continuous H1 maximum lifetime for predicting the bottom quartile of gap01 within each (L,delta_Gamma0) stratum"
+  ],
+  "inference": {
+    "H1_binary_label": "H1_max_lifetime_w6 > 1e-8",
+    "low_gap_label": "gap01 at or below the empirical 25th percentile inside each of the 12 frozen (L,delta_Gamma0) strata",
+    "resampling_unit": "the complete three-delta trajectory of one seed within one L",
+    "permutation_rule": "permute complete H1 trajectories among the 50 seeds separately within each L, preserving dependence across delta_Gamma0",
+    "permutation_replicates": 200000,
+    "cluster_bootstrap_rule": "resample the 50 seed trajectories with replacement separately within each L and retain all three delta observations",
+    "cluster_bootstrap_replicates": 20000,
+    "multiple_testing": "Holm correction across the two co-primary one-sided tests at family-wise alpha=0.05",
+    "direction": "larger H1 predicts smaller gap01",
+    "secondary_tests": [
+      "H1-by-L interaction with stratum fixed effects and seed-trajectory cluster bootstrap",
+      "H1-by-delta estimates reported for all three frozen offsets without subset selection",
+      "adjustment for bulk_ms2, selected-window mean J, selected-window mean Gamma and cyclic window position"
+    ]
+  },
+  "decision_rule": {
+    "strong_positive": "Both Holm-adjusted co-primary tests pass in the predicted direction and the H1 effect remains after preregistered controls.",
+    "limited_positive": "At least one co-primary endpoint is positive or the effect is confined to sizes/offsets, but the full strong-positive rule is not met.",
+    "negative": "Neither co-primary endpoint passes; report that local H1 does not generalize as an out-of-sample soft-gap marker after physical matching.",
+    "opposite": "The association is significantly reversed; abandon the soft-excitation interpretation and report the direction without retuning the H1 threshold."
+  }
+}

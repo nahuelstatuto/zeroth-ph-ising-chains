@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "description": "Clean Figure-1 OBC L32 wide scan, worker2 block C. Uniform dGamma=0.01 around the digitized thermodynamic line.",
+  "source": "Digitized clean Figure 1; deliberately independent of L32 topology",
+  "Gamma_offsets": [
+    -0.20, -0.19, -0.18, -0.17, -0.16, -0.15, -0.14, -0.13, -0.12, -0.11,
+    -0.10, -0.09, -0.08, -0.07, -0.06, -0.05, -0.04, -0.03, -0.02, -0.01,
+    0.00,
+    0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09,
+    0.10, 0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.20
+  ],
+  "points": [
+    {"h": 1.4, "Gamma_center": 0.599},
+    {"h": 1.6, "Gamma_center": 0.453},
+    {"h": 1.8, "Gamma_center": 0.278}
+  ]
+}

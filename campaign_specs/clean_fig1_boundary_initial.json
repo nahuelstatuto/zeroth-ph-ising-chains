@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "description": "Initial five-point local brackets around the digitized clean Figure 1 boundary. Exact endpoints h=0 and h=2 are excluded.",
+  "source": "Nº1 -- Reentrant random quantum Ising antiferromagnet, Figure 1",
+  "Gamma_offsets": [
+    -0.04,
+    -0.02,
+    0.0,
+    0.02,
+    0.04
+  ],
+  "points": [
+    {
+      "h": 0.2,
+      "Gamma_center": 0.992
+    },
+    {
+      "h": 0.4,
+      "Gamma_center": 0.97
+    },
+    {
+      "h": 0.6,
+      "Gamma_center": 0.931
+    },
+    {
+      "h": 0.8,
+      "Gamma_center": 0.878
+    },
+    {
+      "h": 1.0,
+      "Gamma_center": 0.802
+    },
+    {
+      "h": 1.2,
+      "Gamma_center": 0.712
+    },
+    {
+      "h": 1.4,
+      "Gamma_center": 0.599
+    },
+    {
+      "h": 1.6,
+      "Gamma_center": 0.453
+    },
+    {
+      "h": 1.8,
+      "Gamma_center": 0.278
+    },
+    {
+      "h": 1.9,
+      "Gamma_center": 0.154
+    },
+    {
+      "h": 1.95,
+      "Gamma_center": 0.077
+    }
+  ]
+}

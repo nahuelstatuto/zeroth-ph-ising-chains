@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "description": "Higher-bond-dimension refinement of the L=64 OBC endpoint at h=1.95.",
+  "source": "Analysis of clean-fig1-bound-L64-c128-v1",
+  "points": [
+    {
+      "h": 1.95,
+      "Gamma_center": 0.037,
+      "Gamma_values": [
+        0.017,
+        0.037,
+        0.057
+      ]
+    }
+  ]
+}

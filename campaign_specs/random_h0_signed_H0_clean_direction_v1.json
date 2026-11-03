@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "frozen_date": "2026-09-28",
+  "status": "frozen_before_random_projection_analysis",
+  "analysis_id": "random-h0-signed-H0-clean-direction-v1",
+  "template": {
+    "path": "results/clean_ising_gamma_campaign/clean-L32-fullgamma-signed-H0-v1/analysis/u_clean_frozen_v1.npy",
+    "sha256": "ac70761b9726064418661ae75e9a42d3de2127568fc80bacc76a792515a3faae",
+    "shape": [15, 401],
+    "filtration_grid": [0.0, 2.0, 401],
+    "norm": "unit L2 norm with filtration integration and division by 15 layers",
+    "training": "equal-weight mean of unit H0 tangents from older clean OBC L16 and L64 directed cuts; every L32 cut held out"
+  },
+  "random_data": {
+    "model": "random transverse-field Ising h=0",
+    "ensemble": "fixed_mean",
+    "boundary_condition": "open",
+    "matrix": "C=Cstag from dataset /data/C",
+    "distance_used_internally": "D=1-C",
+    "campaigns": [
+      {"L": 8, "chi": 64, "name": "random-h0-Gamma-critical-L8-c64-s0-49-v1"},
+      {"L": 16, "chi": 64, "name": "random-h0-Gamma-critical-L16-c64-s0-49-v1"},
+      {"L": 32, "chi": 128, "name": "random-h0-Gamma-critical-L32-c128-s0-49-v1"},
+      {"L": 64, "chi": 128, "name": "random-h0-Gamma-critical-L64-c128-s0-49-v1"},
+      {"L": 128, "chi": 256, "name": "random-h0-Gamma-critical-L128-c256-s0-24-v1"}
+    ]
+  },
+  "frozen_algorithm": {
+    "landscape_layers": 15,
+    "missing_layers_for_L8": "zero padded",
+    "filtration_grid": [0.0, 2.0, 401],
+    "derivative": "forward finite difference between adjacent Gamma points; response assigned to interval midpoint",
+    "signed_velocity": "L2 inner product of the landscape derivative with the frozen u_clean",
+    "unsigned_velocity": "L2 norm of the same landscape derivative",
+    "physical_response": "negative forward finite difference of bulk_ms2",
+    "qc_invalid_interval": "either endpoint has branch_disagreement or selected_max_bond_dimension >= chi",
+    "per_seed_detector": "discrete maximum positive signed velocity among QC-valid intervals",
+    "aggregate_qc_curve": "at each interval, mean the derivative over QC-valid seeds only",
+    "aggregate_minimum_valid_seed_fraction": 0.8,
+    "aggregate_detector": "discrete maximum positive signed velocity over intervals meeting the valid-seed threshold",
+    "reference": "exact thermodynamic critical Gamma0=1; used only after all detector positions are computed"
+  },
+  "outputs_to_compare": [
+    "aggregate peak of signed H0 velocity",
+    "aggregate peak of unsigned H0 speed",
+    "aggregate peak of physical bulk response",
+    "per-seed peak distributions and correlations",
+    "raw versus QC-masked sensitivity",
+    "alignment cosine at detected peaks"
+  ],
+  "interpretation_guardrails": [
+    "These random datasets pre-exist and have been analyzed with other observables, so this is a frozen reanalysis, not a virgin-data confirmatory experiment.",
+    "No template, sign, filtration grid, layer count, QC rule, seed subset or search window may be changed after inspecting signed random results.",
+    "L, chi and campaign provenance remain separate; no scan is counted twice.",
+    "No output is written to paper_figures in this exploratory pass."
+  ]
+}

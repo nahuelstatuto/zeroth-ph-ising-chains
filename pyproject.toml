@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clean-tfim-tn"
+version = "1.0.0"
+description = "Zeroth persistent homology of ground-state correlations in clean and random Ising chains (code of the paper)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Francisco Belchi" }, { name = "Nahuel Statuto" }]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23",
+  "scipy>=1.9",
+  "physics-tenpy>=1.0",
+  "h5py>=3.7",
+  "psutil>=5.9",
+  "matplotlib>=3.6",
+  "gudhi>=3.8",
+  "networkx>=3.0",
+]
+
+[project.optional-dependencies]
+notebooks = ["jupyter", "nbformat", "nbclient"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-09-13",
+  "development_campaign": "pbc-reentrant-L16-discovery-c64-s0-9-view-v1",
+  "validation_campaign": "pbc-reentrant-L16-final-fine625-c64-s10-59-view-v1",
+  "input": "C=Cstag; D=1-C; Vietoris-Rips filtration on [0,2]",
+  "response": "L2 velocity of the disorder-mean persistence landscape along Gamma0",
+  "entry_detector": {
+    "homology_dimension": 0,
+    "Gamma0_mid_window": [0.0, 0.225],
+    "estimator": "global maximum within the fixed window with local quadratic interpolation"
+  },
+  "exit_detector": {
+    "homology_dimension": 1,
+    "Gamma0_mid_window": [0.275, 0.575],
+    "estimator": "global maximum within the fixed window with local quadratic interpolation"
+  },
+  "candidate_validity": "the discrete maximum must not lie at either edge of its fixed window",
+  "physical_reference": "two zero crossings surrounding the maximum of the disorder-mean signed paper-distance Cstag curve at fixed h, after the canonical decreasing isotonic projection in h at each Gamma0",
+  "primary_metrics": [
+    "entry and exit mean absolute error where two physical crossings are bracketed",
+    "paired bootstrap confidence interval of topological-minus-physical crossing",
+    "fraction of h values with two valid topological candidates inside and outside the physical reentrant sector"
+  ],
+  "independence_note": "All detector choices were frozen after inspecting only seeds 0-9. Seeds 10-59 are held out for validation."
+}

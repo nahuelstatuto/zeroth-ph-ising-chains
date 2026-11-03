@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-18T21:29:41.272892+00:00",
+  "generator": "paper_figures/fig_h0_clusters/prepare_data.py (V1)",
+  "conventions": "OBC; h=0; C=Cstag raw; topology on D=1-C; exact free fermions; didactic couplings",
+  "files": [
+    {
+      "file": "toy_chain.npz",
+      "sha256": "c01b4e45a208279086afe5cdecca76096a9173aeb64e653469a8413cd59208e5",
+      "size_bytes": 1505
+    }
+  ],
+  "sources": [
+    {
+      "path": "src\\clean_tfim_tn\\exact\\free_fermion_h0.py",
+      "sha256": "3619f28c3b7b2e426f834de3056a456794582e78a0162503de0c93258b61bdd4"
+    },
+    {
+      "path": "scripts\\compare_sdrg_h0_clusters_review_v1.py",
+      "sha256": "72edcd9848c467113522c3f478965a4de90ee2f89fcb1872fc74dabe846fc1c6"
+    }
+  ]
+}

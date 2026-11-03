@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "description": "High-chi QC and refinement of the nonzero-Gamma secondary response for clean OBC L32 h=1.9. The Gamma=0 singular interval is intentionally excluded.",
+  "source": "The completed chi=128 scan has four bond saturations and three branch-disagreement flags; topology was not used.",
+  "points": [
+    {
+      "h": 1.9,
+      "Gamma_center": 0.11,
+      "Gamma_values": [0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18]
+    }
+  ]
+}

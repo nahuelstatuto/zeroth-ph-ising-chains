@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "description": "Lower-Gamma extension of the clean OBC L64 h=0.8 cut after the bulk-response maximum remained at the lower edge of the original five-point grid.",
+  "source": "Physical bulk-response audit on 2026-09-26; topology was not used.",
+  "points": [
+    {
+      "h": 0.8,
+      "Gamma_center": 0.765,
+      "Gamma_values": [0.70, 0.71, 0.72, 0.73, 0.74, 0.75, 0.76, 0.77, 0.78, 0.79, 0.80, 0.81, 0.82, 0.83]
+    }
+  ]
+}

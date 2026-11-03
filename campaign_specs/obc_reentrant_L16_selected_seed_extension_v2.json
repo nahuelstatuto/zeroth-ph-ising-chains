@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "submitted",
+  "created_date": "2026-09-22",
+  "seeds": [500, 699],
+  "worker": "TURING",
+  "slurm_job_id": 2645,
+  "array_concurrency": 3,
+  "array_concurrency_rationale": "Five older L128/L256 tasks were running at submission and ladon MaxJobsPU=8; cap the new array at three so it does not displace those workloads.",
+  "campaign_family": "L16-reentrant-selectedscreen-fine125-c32-sSEED-turing-v2",
+  "launcher": "cluster/turing/slurm_l16_reentrant_selectedscreen_s500_699_array.sh",
+  "launcher_sha256": "e1af91ccc5e12957866d77c095d5e26404c3fb78f21ac86501e82be222768632",
+  "release": "/mnt/beegfs/nstatuo/tn-tda/releases/20260909-pbc-v1",
+  "conditions": {
+    "L": 16,
+    "bc": "open",
+    "ensemble": "fixed_mean",
+    "chi_max": 32,
+    "h": 2.5,
+    "Gamma0_min": 0.0,
+    "Gamma0_max": 0.6,
+    "Gamma0_points": 49,
+    "mps_save_policy": "selected",
+    "topological_matrix": "C=Cstag"
+  },
+  "selection_rule": "Unchanged from campaign_specs/obc_reentrant_L16_selected_seed_extension_v1.json",
+  "analysis_status": "Interim analysis of completed 100-499 seeds is user requested and exploratory. Keep original 100-499 cohort and this 500-699 extension separately identifiable. Do not call interim results preregistered confirmation or infer from completion-ordered data without caveat."
+}

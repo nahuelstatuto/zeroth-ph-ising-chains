@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "status": "complete_validated",
+  "created_date": "2026-10-10",
+  "objective": "Extend the matched OBC random-field cohorts to 1000 total disorder seeds at each size.",
+  "boundary_conditions": "open",
+  "ensemble": "fixed_mean",
+  "matrix_saved": "raw unconnected C=Cstag in /data/C",
+  "topology_distance_policy": "D=1-C only in downstream PH",
+  "mps_save_policy": "selected",
+  "cohorts": {
+    "L16": {
+      "existing_seed_range": [100, 699],
+      "existing_seed_count": 600,
+      "new_seed_range": [700, 1099],
+      "new_seed_count": 400,
+      "final_seed_count": 1000,
+      "h": 2.5,
+      "chi_max": 32,
+      "Gamma0_min": 0.0,
+      "Gamma0_max": 0.6,
+      "Gamma0_points": 49,
+      "Gamma0_step": 0.0125,
+      "campaign_block_pattern": "L16-reentrant-h2500-extension1000-c32-sSTART-STOP-v1",
+      "compatible_preserved_scans": [700, 800]
+    },
+    "L32": {
+      "existing_seed_range": [150, 449],
+      "existing_seed_count": 300,
+      "new_seed_range": [450, 1149],
+      "new_seed_count": 700,
+      "final_seed_count": 1000,
+      "h": 2.3125,
+      "chi_max": 64,
+      "Gamma0_min": 0.0,
+      "Gamma0_max": 0.6,
+      "Gamma0_points": 25,
+      "Gamma0_step": 0.025,
+      "campaign_block_pattern": "L32-reentrant-h23125-extension1000-c64-sSTART-STOP-v1"
+    }
+  },
+  "queue_design": {
+    "block_size_seeds": 10,
+    "L16_block_count": 40,
+    "L32_block_count": 70,
+    "total_block_count": 110,
+    "interleave_per_wave": "4 L16 blocks and 7 L32 blocks",
+    "priority": 45,
+    "resources_per_block": {
+      "cpu_threads": 2,
+      "ram_gb": 2.0,
+      "exclusive": false
+    },
+    "scheduler_limits": {
+      "maximum_active_blocks": 14,
+      "cpu_thread_budget": 28,
+      "ram_budget_gb": 60.0
+    }
+  },
+  "launch": {
+    "launched_utc": "2026-10-10T19:01:53Z",
+    "dispatcher_pid": 24992,
+    "initial_active_blocks": 14,
+    "initial_queued_blocks": 96,
+    "initial_active_split": {
+      "L16": 5,
+      "L32": 9
+    },
+    "dispatcher_log": "monitoring/logs/L16-L32-to1000-dispatcher.out.log"
+  },
+  "completion": {
+    "finished_utc": "2026-10-11T23:37:37.357329Z",
+    "finished_local_cest": "2026-10-12T01:37:37.357329+02:00",
+    "elapsed": "28h35m44s",
+    "blocks_complete": 110,
+    "new_seeds_complete_or_reused": 1100,
+    "failed_jobs": 0,
+    "L16": {
+      "new_seed_count_validated": 400,
+      "calculated": 398,
+      "reused": 2,
+      "reused_seeds": [700, 800],
+      "branch_disagreement_seeds": 2,
+      "branch_disagreement_points": 2,
+      "chi_saturation_seeds": 1,
+      "chi_saturation_points": 16
+    },
+    "L32": {
+      "new_seed_count_validated": 700,
+      "calculated": 700,
+      "reused": 0,
+      "branch_disagreement_seeds": 31,
+      "branch_disagreement_points": 71,
+      "chi_saturation_seeds": 18,
+      "chi_saturation_points": 18
+    },
+    "validation": {
+      "exact_seed_ranges": true,
+      "missing_seeds": 0,
+      "unexpected_seeds": 0,
+      "duplicate_seeds": 0,
+      "protocol_mismatches": 0,
+      "missing_required_artifacts": 0,
+      "invalid_Gamma_grids": 0,
+      "invalid_Cstag_shapes": 0,
+      "npz_load_errors": 0
+    }
+  },
+  "scientific_guardrails": [
+    "Do not pool L16 and L32 without recording their different h values and Gamma grids.",
+    "Do not inspect topology while deciding which physical seeds are reentrant.",
+    "Preserve branch-disagreement and chi-saturation flags.",
+    "Count reused compatible scans once only."
+  ]
+}

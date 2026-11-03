@@ -1,0 +1,15 @@
+# everything the code writes
+results/*
+!results/README.md
+paper_figures/*/output/*
+!paper_figures/*/output/.gitkeep
+
+# python and notebooks
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+
+# large simulation formats, never committed
+*.h5
+*.hdf5

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-13T12:20:19.954729+00:00",
+  "note": "Single random h=0 realization used for the schematic: L=16, seed 43, chi=64, OBC, fixed_mean. Chosen for heterogeneous H0 bars at Gamma0=0.95 (0.153-0.602), one non-nearest-neighbour merge edge and zero branch-disagreement flags.",
+  "conventions": "OBC; C=Cstag raw (not connected); topology on D=1-C; Pauli operators",
+  "files": [
+    {
+      "file": "random_h0_L16_seed43_chi64.npz",
+      "source": "results/random_ising_gamma_ensemble/random-h0-Gamma-critical-L16-c64-s0-49-v1/scans/L16_seed43_h_0_chi64/continuation_summary.npz",
+      "sha256": "2abeb81e540a0c0b6d0698455efd7aa30108e4846cb0ac0d6c65a224b6845b08",
+      "size_bytes": 155389
+    }
+  ]
+}

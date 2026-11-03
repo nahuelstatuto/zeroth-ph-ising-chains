@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "reentrant-signed-H0-clean-direction-v1",
+  "frozen_before_projection": true,
+  "question": "Can the clean H0 topological direction autonomously distinguish the entry into and exit from a physically reentrant lobe?",
+  "observable": {
+    "matrix": "C=Cstag",
+    "filtration_internal": "D=1-C",
+    "homology_dimension": 0,
+    "definition": "v_parallel(Gamma)=<dLambda0/dGamma,u_clean>",
+    "inner_product": "trapezoidal L2 integral over filtration coordinate after summing landscape layers, divided by the fixed layer count",
+    "derivative": "forward finite difference assigned to Gamma midpoints",
+    "landscape_layers": 15,
+    "filtration_grid": [0.0, 2.0, 401]
+  },
+  "template": {
+    "path": "results/clean_ising_gamma_campaign/clean-L32-fullgamma-signed-H0-v1/analysis/u_clean_frozen_v1.npy",
+    "sha256": "ac70761b9726064418661ae75e9a42d3de2127568fc80bacc76a792515a3faae",
+    "training": "older clean OBC L16 and L64 directed cuts; no random or reentrant data",
+    "retuning_allowed": false
+  },
+  "cohorts": {
+    "OBC": {
+      "L": 16,
+      "h": 2.5,
+      "chi": 32,
+      "ensemble": "fixed_mean",
+      "seeds": [100, 699],
+      "seed_count": 600,
+      "Gamma0": [0.0, 0.6, 0.0125],
+      "physically_selected_count": 61,
+      "selection_source": "results/random_ising_gamma_ensemble/L16-reentrant-selectedscreen-fine125-s100-699-complete-v2/analysis/analysis_arrays.npz"
+    },
+    "PBC": {
+      "L": 16,
+      "h": 2.5,
+      "chi": 64,
+      "ensemble": "fixed_mean",
+      "seeds": [10, 59],
+      "seed_count": 50,
+      "Gamma0": [0.0, 0.6, 0.025],
+      "physically_selected_count": 6,
+      "selection_source": "results/random_ising_gamma_ensemble/pbc-reentrant-L16-final-fine625-c64-s10-59-view-v1/analysis/selected_seed_topology_arrays.npz"
+    }
+  },
+  "frozen_detection_rule": {
+    "search_domain": "all derivative intervals except the first interval touching Gamma0=0",
+    "entry": "global minimum of v_parallel; it must be negative",
+    "exit": "global maximum of v_parallel; it must be positive",
+    "ordered_reentrance": "entry_Gamma < exit_Gamma and both sign conditions pass",
+    "physical_windows": false,
+    "amplitude_threshold": null,
+    "qc_veto": false,
+    "qc_policy": "retain and report branch-disagreement and bond-saturation flags; do not exclude them",
+    "one_step_match": {
+      "OBC": 0.0125,
+      "PBC": 0.025
+    }
+  },
+  "primary_evaluation": {
+    "localization": "physically selected seeds, with physical entry and exit revealed only after topological predictions",
+    "unconditional_control": "apply the identical signed rule to every seed and report the ordered-pair rate among physical positives and controls",
+    "aggregate": "apply the same extrema rule to the arithmetic mean signed velocity; linearity makes mean velocities equal velocity of the mean landscape"
+  },
+  "comparators": {
+    "entry": "unsigned H0 landscape-speed global maximum on the same search domain",
+    "exit": "unsigned H1 landscape-speed global maximum on the same search domain",
+    "extra_negative_control": "unsigned H0 landscape-speed global maximum interpreted as exit"
+  },
+  "guardrails": [
+    "The physical selection is topology-blind but conditional and therefore does not validate an unconditional phase classifier.",
+    "No threshold or field window may be tuned after viewing these projections.",
+    "The PBC transfer keeps the OBC-clean template unchanged.",
+    "H2 and H3 are not computed."
+  ]
+}

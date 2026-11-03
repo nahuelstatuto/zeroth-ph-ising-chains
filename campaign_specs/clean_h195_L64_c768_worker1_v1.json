@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "description": "High-chi Worker 1 QC for the unresolved clean OBC L64 h=1.95 avoided crossing",
+  "source": "RESULTADOS_CLEAN_FRONTIER_COMPLETE_20260927.md",
+  "points": [
+    {
+      "h": 1.95,
+      "Gamma_center": 0.0475,
+      "Gamma_values": [
+        0.005, 0.010, 0.015, 0.020, 0.025, 0.030, 0.035, 0.040, 0.045,
+        0.050, 0.055, 0.060, 0.065, 0.070, 0.075, 0.080, 0.085, 0.090
+      ]
+    }
+  ]
+}

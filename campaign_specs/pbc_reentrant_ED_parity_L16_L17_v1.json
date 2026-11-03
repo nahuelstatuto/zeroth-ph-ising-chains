@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "status": "prepared_not_launched",
+ "created_date": "2026-10-23",
+ "objective": "Wall-parity test of the reentrant section with periodic chains: PBC L16 (walls in pairs, like OBC L17) vs PBC L17 (forced odd number of walls, like OBC L16), on the OBC L16/L17 grid, with saved C=Cstag so the frozen OBC topology rules can be applied unchanged.",
+ "plan": "documentation/PLAN_PBC_ED_PARITY_L16_L17_20261023.md",
+ "runner": "scripts/run_pbc_reentrant_ED_parity.py",
+ "enqueue": "scripts/enqueue_pbc_reentrant_ED_parity_20261023.py",
+ "analysis": "scripts/analyze_pbc_reentrant_ED_parity.py",
+ "solver": "exact diagonalization, eigsh k=2 (tol 1e-10), warm start along Gamma0; Gamma0=0 exact on the diagonal",
+ "boundary_conditions": "periodic",
+ "ensemble": "fixed_mean",
+ "operators": "Pauli Sigmaz/Sigmax",
+ "correlators": "raw, not connected; Czz of the two lowest states stored",
+ "matrix_saved": "C=Cstag with circular phase (-1)^min(|i-j|, L-|i-j|) as key C (and Cstag) in seeds/scan_sXXXX.npz",
+ "topology_distance_policy": "D=1-C only in downstream PH",
+ "state_save_policy": "ground states (float32, all Gamma0) only for seeds passing the frozen physical selection; ED is deterministic and any other seed can be recomputed",
+ "Gamma0": {"min": 0.0, "max": 0.6, "points": 49, "step": 0.0125},
+ "R": "floor(L/2) - 1 = 7 for both sizes",
+ "cohorts": {
+  "main": {"sizes": [16, 17], "h": [2.5], "seed_range": [5000, 5999], "seed_count": 1000},
+  "h_map": {"sizes": [16, 17], "h": [2.4, 2.45, 2.5, 2.55, 2.6], "seed_range": [6000, 6199], "seed_count": 200,
+            "note": "same seeds at every h (paired); never pooled with the main cohort"}
+ },
+ "seed_ranges_checked_unused_for_pbc": "PBC seeds used before: 0-299 (ED review), 0-59 (DMRG), 1000-1049, 1100-1399 (ED), 2000-3499 (DMRG selected screen)",
+ "queue_design": {
+  "block_size_seeds": 50,
+  "blocks": {"main_L16": 20, "main_L17": 20, "h_map_L16": 20, "h_map_L17": 20},
+  "resources_per_block": {"cpu_threads": 1, "ram_gb": 1.0},
+  "priority": {"main": 60, "h_map": 58},
+  "measured_cost_seconds_per_seed": {"L16": 73, "L17": 198, "note": "one seed, h=2.5, single thread, idle machine (2026-10-23); L17 measured with tol 1e-11, expected ~15 % less"},
+  "estimated_cpu_hours": {"main": 70, "h_map": 70},
+  "estimated_wall_hours_14_blocks": "10-14 for everything (12 physical cores)",
+  "completion_statuses": ["complete", "failed"],
+  "restart": "an abrupt shutdown leaves seeds as running, never failed; requeue the same command, completed seeds are skipped"
+ }
+}

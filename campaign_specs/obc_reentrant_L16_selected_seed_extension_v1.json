@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "status": "preregistered_not_launched",
+  "created_date": "2026-09-21",
+  "campaign_families": {
+    "worker1": "L16-reentrant-selectedscreen-fine125-c32-sRANGE-worker1-v1",
+    "turing": "L16-reentrant-selectedscreen-fine125-c32-sSEED-turing-v1"
+  },
+  "execution_provenance": {
+    "worker1_code": "local workspace at launch; frozen runner/source hashes audited before pilot",
+    "turing_release": "/mnt/beegfs/nstatuo/tn-tda/releases/20260909-pbc-v1",
+    "runner_sha256": {
+      "scripts/run_random_ising_gamma_ensemble.py": "b66b61cfcc268ad62b8c5a293f343066b5377848ecab1db4039dc87d5b31dbaa",
+      "scripts/run_random_ising_gamma_scan.py": "10a4d5d24e855413dc59e5968d1ae63ade294dab9eb0b3deb103c53135a01eb9"
+    },
+    "cross_worker_code_audit": "The two runners and ten directly imported OBC disorder/TN/IO source files have identical SHA256 hashes between Worker1 and the pinned Turing release. Do not replace the release path with the mutable current symlink."
+  },
+  "scientific_objective": "Increase the topology-blind cohort of individual OBC L=16 samples with a clear physical reentrant lobe, then test H0-entry and H1-exit alignment without selecting on topology.",
+  "conditions": {
+    "L": 16,
+    "boundary_conditions": "open",
+    "ensemble": "fixed_mean",
+    "chi_max": 32,
+    "h_values": [
+      2.5
+    ],
+    "Gamma0_min": 0.0,
+    "Gamma0_max": 0.6,
+    "Gamma0_points": 49,
+    "Gamma0_step": 0.0125,
+    "seed_ownership": {
+      "worker1_pilot": [[100, 104], [105, 109]],
+      "worker1_production_after_pilot_gate": [[110, 204], [205, 299]],
+      "turing_pilot": [300, 309],
+      "turing_production_after_pilot_gate": [310, 499],
+      "complete_new_cohort": [100, 499],
+      "overlap_count": 0
+    },
+    "mps_save_policy": "selected",
+    "correlator": "raw Cstag",
+    "topological_matrix": "C=Cstag",
+    "topological_filtration": "D=1-C"
+  },
+  "physical_selection_rule": {
+    "topology_blind": true,
+    "observable": "signed paper-distance Cstag",
+    "trajectory": "negative-positive-negative with exactly two linearly interpolated zero crossings",
+    "endpoint_points": 2,
+    "negative_margin": 0.02,
+    "positive_amplitude": 0.05,
+    "minimum_lobe_width": 0.1,
+    "minimum_positive_run": 2
+  },
+  "sample_size_rationale": {
+    "existing_total_seeds": 100,
+    "existing_selected_seeds": 7,
+    "plug_in_selection_probability": 0.07,
+    "new_seed_count": 400,
+    "expected_new_selected": 28.0,
+    "expected_total_selected": 35.0,
+    "probability_total_selected_at_least_30": 0.861,
+    "expected_binomial_95_percent_half_width_at_35_selected": "approximately 0.14 to 0.16 for response probabilities near the observed 4/7 and 5/7",
+    "precision_target_not_claimed": "This first stage is an exploratory replication, not a +/-0.10 endpoint. Approximately 900-1200 additional seeds would be needed for that precision at the observed selection rate."
+  },
+  "analysis_freeze": {
+    "primary_h": 2.5,
+    "primary_topological_tests": [
+      "individual H0 landscape-velocity peak versus physical entry",
+      "individual H1 landscape-velocity peak versus physical exit"
+    ],
+    "success_tolerance": "absolute peak-boundary error <= one Gamma0 step (0.0125)",
+    "classical_endpoint_policy": "retain Gamma0=0 but exclude velocity interval 0->0.0125 from primary peak tests",
+    "aggregation": "scalars individual-first; cohort velocity is the derivative norm of the mean landscape",
+    "completion_order_policy": "Do not estimate effects from the first completed production seeds. Analyze the frozen 100-499 cohort only after every seed is complete or has a documented terminal failure.",
+    "pilot_policy": "Worker1 seeds 100-109 and Turing seeds 300-309 are used only for runtime, memory, artifact and cross-worker QC validation before releasing the remaining owned ranges. Their physical/topological outcomes do not alter the frozen rule or sample size.",
+    "worker_pooling_policy": "Pool both workers only after verifying identical protocol metadata and compatible observables. Preserve worker provenance in every campaign and report a worker-stratified sensitivity analysis."
+  },
+  "interpretation_limits": [
+    "The current 100-seed OBC disorder mean is negative over the complete Gamma0 grid at h=2.5, so this campaign is not powered or motivated as recovery of an ensemble-average lobe.",
+    "A selected-cohort result is conditional and is not a universal phase-boundary detector.",
+    "Seeds are independent samples; Gamma0 points within a seed are not independent observations."
+  ]
+}

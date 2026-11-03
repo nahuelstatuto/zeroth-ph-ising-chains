@@ -1,0 +1,936 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-14T09:07:00.761978+00:00",
+  "generator": "paper_figures_claude/fig_reentrant/prepare_data.py",
+  "conventions": "OBC; fixed_mean; C=Cstag raw (not connected); topology on D=1-C; Pauli operators",
+  "selection": "frozen physical selection of the all-1000 analyses",
+  "magnetization": "measured on saved MPS by scripts/measure_reentrant_local_magnetization.py (no DMRG)",
+  "files": [
+    {
+      "file": "reentrant_L16.npz",
+      "sha256": "de029fd542020fc4b7357ee2bf477c4dbe27396c07eeeb39910845f70d3777c9",
+      "size_bytes": 956772
+    },
+    {
+      "file": "reentrant_L32.npz",
+      "sha256": "78f4457a3e77610fdd37f169978f39741e23af5fbfced35c3501b0b9867786c1",
+      "size_bytes": 1209205
+    },
+    {
+      "file": "reentrant_H1_common_tau.npz",
+      "sha256": "9ee22194429aefa237849197e2a5c092741568eb7fc9199996402c25e85387b7",
+      "size_bytes": 2908
+    },
+    {
+      "file": "reentrant_L17.npz",
+      "sha256": "acdc4c18892ce4c05ca7dc0ea2bff9ebcee251d1db49d1c726a89828e9628bd3",
+      "size_bytes": 210677
+    },
+    {
+      "file": "reentrant_L33.npz",
+      "sha256": "5338e24e2a24bc532eef800df970d4f2804c45ddccf8c515162e0343992bca76",
+      "size_bytes": 149264
+    },
+    {
+      "file": "reentrant_entry_walls.npz",
+      "sha256": "1f34c8b3802dbdbd60753532528dbfbd2275fe2643498adb40270d2e288256dd",
+      "size_bytes": 5540
+    },
+    {
+      "file": "reentrant_parity_average.npz",
+      "sha256": "bf58a58042d0c96b696e008ee7df22c9c86fe943b46804436c861239b2785169",
+      "size_bytes": 1029255
+    }
+  ],
+  "sources": [
+    {
+      "path": "results\\random_ising_gamma_ensemble\\reentrant-exit-anatomy-v1\\analysis\\cache_L16.npz",
+      "sha256": "1dcf3f51aed78dc9b46cfd9ffbe067121beb279c950026927da0f38bdcc4a2f9"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\reentrant-exit-anatomy-v1\\analysis\\local_magnetization_L16.npz",
+      "sha256": "d12f7d91ccaf854d29b590291bc2ac547f97b33a944f28b9e7fd2a8e36b6fda3"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L16-reentrant-all1000-complete-v1\\analysis\\analysis_arrays.npz",
+      "sha256": "31787a9564108870fbda7b82efc1e2aff29719d65315fa9edea3eae7d7cfc897"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\reentrant-exit-anatomy-v1\\analysis\\cache_L32.npz",
+      "sha256": "3285c518e709f66c9afc53f48cb9a1cd94a8eee71f3ecafb5b4cfa88bf79a171"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\reentrant-exit-anatomy-v1\\analysis\\local_magnetization_L32.npz",
+      "sha256": "d59669377222d54a1b70dbec84bbdf0800a8a2ffb353309127dc52754eda3b4b"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L32-reentrant-h23125-all1000-complete-v1\\analysis\\analysis_arrays.npz",
+      "sha256": "a04376a43e46b39ce43ef157849c15e79b95b94de1c9c50e8dc7f49f3e07903a"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s0-9-v1\\scans\\L17_seed0_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "3392235d055489eaaa146a6a8e300eea8912644f89175601296b26da5ca73f48"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s0-9-v1\\scans\\L17_seed8_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "f93aea5e3dc80ba16dcd5d3f0a285b6f4fc9942d6b37c158d5610881b4d916fb"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s20-29-v1\\scans\\L17_seed27_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "5b91cd9a6e2f436a5efd05ac0024837779da35c99b68a935eedf46e963661a35"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s30-39-v1\\scans\\L17_seed39_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "e74f23c89381d9af16d44a3767b436c1ba6941828c619381bcd0232acb07426e"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s50-59-v1\\scans\\L17_seed53_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "4e5e3059235493797dcab4b72929ee49a979793236b7c94600290ee52a89071c"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s70-79-v1\\scans\\L17_seed76_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "f53b2564b83f3999dea41df366822dd1a272d671075e22f586d577930403c0c9"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s80-89-v1\\scans\\L17_seed88_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "aa07fb7a2f9647f449bacc9284a19219edbab18b497582dba9974ecfb769d8f2"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s80-89-v1\\scans\\L17_seed89_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "94cd113161c7d14c0aaed41206d12ec72c9e1a71a884c718ab2654c7b0739f02"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s90-99-v1\\scans\\L17_seed93_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "475affd240bbb215dd67c2f93728b9d7b4eb3302ce05b379c774959f44369b0d"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s100-109-v1\\scans\\L17_seed104_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "b4d8c834197d320ed2abef78d04e34e2727744e373e1f480899b48599b692ed2"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s110-119-v1\\scans\\L17_seed110_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "ef66f00958898f0a20881741d36c7a0f3fd61bf0dffad02936f8e826b39c2987"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s110-119-v1\\scans\\L17_seed113_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "132d92bb0f8b2421b82f982a2ed13ea77077b2a07877c7f51b3f3aa6c7c886a3"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s120-129-v1\\scans\\L17_seed126_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "9cda1f62617d865d10593d40980b74c040adeff2f907e688157fc1486ecc7c57"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s130-139-v1\\scans\\L17_seed135_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "ba77d3553925fb6ddf1c1448091094c86224dd557ac5645040d1a3801cf38c45"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s160-169-v1\\scans\\L17_seed169_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "85ccb32cc9d76474b64d010bc16e891b36a91acc9a4c4aadfa6f707f470036c4"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s170-179-v1\\scans\\L17_seed171_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "b3a2856eca296b2a7bdcda2985f9478b96e83fcb392b819f1607fd50f0be1f31"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s170-179-v1\\scans\\L17_seed178_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "5d87dc7818af7d69840bb6c13a74bec85fe3700386a0752aa3390600063bcf88"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s180-189-v1\\scans\\L17_seed182_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "723f0c1af2fbeb532a2875e057cc6731315417aaa528eb82b8f6f89cacc33127"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s180-189-v1\\scans\\L17_seed185_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "4c4822935e43e7a6a913b93e186eeb21f6f9bb2d313572286056db0423fc9373"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s180-189-v1\\scans\\L17_seed187_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "d33b6f041a1c54c10c0359c2f933888c2db3c2f1ee8c2410f5c132d4ca378d5d"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s200-209-v1\\scans\\L17_seed201_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "fefa0ebc4f4238a0281e7f275ff91c4426587407411b5e822d2b2d87bd9ecfd1"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s200-209-v1\\scans\\L17_seed207_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "6c0f3851df4704fa6048215c81a3f457b4d6f861f0b1268ff79e2db0865da9cb"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s220-229-v1\\scans\\L17_seed227_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "3fc368e5f2dd21c13aaa0238662069fcf5f0986be5bc5cb4489509765edc1835"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s220-229-v1\\scans\\L17_seed229_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "950ada292bb97c09b1a92c00dd182c6106eac26989cbcae50ffee5bed244446a"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s230-239-v1\\scans\\L17_seed230_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "ff8df35d0ca9c43d5edbeaa184d78573ddfc9bcdffa2ec409b2e193228b96e14"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s240-249-v1\\scans\\L17_seed247_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "5f11a56cd207316c797c2e9e663de1d8f7d9415c046ad662bbc9010dc90ce133"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s250-259-v1\\scans\\L17_seed252_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "753d9a7b7d11c13da5cd54267eceab6035d51c1e792e751324db5cf7bb77410d"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s260-269-v1\\scans\\L17_seed260_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "8f4750d958a0d36174d07c91dc4035c7387e8f7a20e09f85f9b4c4872398ecca"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s260-269-v1\\scans\\L17_seed262_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "10a3c41e0c434abf40560baf1ecbfe08942d3b97130dd6dab468c0d8953a6f27"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s260-269-v1\\scans\\L17_seed266_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "bd4cb419aaadfe23c3bb98e71680b985ddecf64a692cce50283fc8cb65e03324"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s270-279-v1\\scans\\L17_seed277_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "20ab98d3e4f7758cf82e2bd10547e43bb6bc9a425597997de16028446d28a73e"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s280-289-v1\\scans\\L17_seed286_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "5719d6094f7d6062f99bd0b1f1c01b15770be89487eae59870b6e0274131e5b4"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s320-329-v1\\scans\\L17_seed325_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "7aab410a651025c7d8cea621757eb935e430294afcffbcf169328b583f9aee37"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s330-339-v1\\scans\\L17_seed335_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "1132901772597a0e43a278923c4013f1840c18a32ada4113c80cebf403e0cce0"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s340-349-v1\\scans\\L17_seed342_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "0ddc32a7ecfbe77abf0600aad3cc89e7e6bcd9da660dae2c6cde612dddf14b1a"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s360-369-v1\\scans\\L17_seed364_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "261994ee06178bc49ce479fa355120144616888ec8ff538cd2a39d37e4202045"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s360-369-v1\\scans\\L17_seed367_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "e55266b43d29e142603a4bdf3e67d35b16e97fd4bc0a6e0c6aa7a5316a664be4"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s370-379-v1\\scans\\L17_seed372_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "f41ae1302e4a7a1dcd73c1775c8a543dcb12fc7072e7b674399efab0b412d09a"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s370-379-v1\\scans\\L17_seed373_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "9aff91c495e0957a50ac3be2b363386a131be8a0a2a3d895a9e467c0386d7ce4"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s370-379-v1\\scans\\L17_seed376_h_2.5_chi32\\continuation_summary.npz",
+      "sha256": "aa37f9ed23a891208d5d828f3d8f575f023131bebfbd67ec2caf2ad458e427bf"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\reentrant-oddL-L17-L33-v1\\analysis\\cache_L17.npz",
+      "sha256": "ee7d0271262ea35b9dd007f66b60cfdd1f0a756beaf5a0535290622079ba387f"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s0-9-v1\\scans\\L33_seed6_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "76b5a3b8d438294aa8cee5a3aae8ec3e2abd91904127b5e9a208eeb17c6cf75e"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s10-19-v1\\scans\\L33_seed11_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "a2d8222e4c54e5a134a9c27ae0846cce444877e90fe7188db5b8c404f190dcac"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s20-29-v1\\scans\\L33_seed26_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "cc4bb8ecb8a5efe44f39cf4ebd5f3bbb6697ddd5f1262749a74c6f43585038d3"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s30-39-v1\\scans\\L33_seed35_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "c532520a7b33951ac560852bdca60a343749a995879ae6e10ffc0d7fc7e1492f"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s30-39-v1\\scans\\L33_seed39_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "065bebb5e53ca9b4ef0df5c51fd351a0c1d25e9a1c4a5566eaa0bf9473afbdff"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s60-69-v1\\scans\\L33_seed64_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "52b9616d1ba958a1fca9be940cbb90f7bad1ed65d53fdf39576d2733920c8de0"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s80-89-v1\\scans\\L33_seed80_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "34e2907a5d116858436357bcee85bf059eaed2cad10b11f77470bd045cb0c77f"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s80-89-v1\\scans\\L33_seed82_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "5b2a3f993f9d794fe1a74cbd38cd22f927fafd5535217c1348c86372bf87a721"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s90-99-v1\\scans\\L33_seed92_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "c117fd20646acf471385048789b322de0017f972df84091323f97a6491ed735a"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s90-99-v1\\scans\\L33_seed95_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "3030ea47c7f72e4a57c1e3450eb276f77cddb3807c68a95f52a4665c243980c6"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s110-119-v1\\scans\\L33_seed116_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "ed5999071fc1c5312295e2590cd4379220cf8bd4efeb95a7af596bf50c1ed389"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s120-129-v1\\scans\\L33_seed121_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "6783c2b249756641fc408465a7c04d7d4f7c53de2afab781a40afc1886664d13"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s120-129-v1\\scans\\L33_seed125_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "87209ece35ce347935171a7b90355857cf029336d71f4fbc93bcabf26894cea7"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s120-129-v1\\scans\\L33_seed127_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "fe8d9ab7258f39bde4325a638d69409459f7258ac0629adf43c7de96fd728c46"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s130-139-v1\\scans\\L33_seed132_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "a79ed6f285d81333bd785e9b8c86fe52b8744583f146b475b0775010ab5c14fd"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s140-149-v1\\scans\\L33_seed140_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "66d49a1174665a9f6ad9a60b64edb49d2ad6fc23d24c156ac81c6163a4145db0"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s160-169-v1\\scans\\L33_seed167_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "2ffe19e3a1e22e7e693cb596f8676b66f0f33da2515605dde8aaed9d5af2b2f9"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s170-179-v1\\scans\\L33_seed176_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "e1f02b12279f34b7bb8c2ca8edb85309e0f325a0e7cd90276399206621b2fa2f"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s170-179-v1\\scans\\L33_seed178_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "1881549a2a37680cfbd8043ca32c4be5ec31ca014c3883fef515f6490f239881"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s180-189-v1\\scans\\L33_seed183_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "9df81a0f4ec343332d43bc2c200e05ea642e9bfa60bd0b9b4415527483e366f1"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s180-189-v1\\scans\\L33_seed184_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "0b0e38af323934dad3002f770131ca75724880f03ed204d82f50ec54de2aed77"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s180-189-v1\\scans\\L33_seed189_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "34072e697cf3081efd966c9efb0a2a0134a1cc0d93b84f00e1908d44716ca651"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s200-209-v1\\scans\\L33_seed203_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "51674ee548ed13df8dc56d0448fd3444781096101956408d09376f614acd50df"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s230-239-v1\\scans\\L33_seed239_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "88d4acec1b214e2a35b74d3ddab43a4c0d5ab5e5121b3f5e59f4ac706be37912"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s240-249-v1\\scans\\L33_seed245_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "849aaf5b4ec7f1a87f23d6922b288e40efb506cef5a1bf94bc432408566570d6"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s240-249-v1\\scans\\L33_seed246_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "09e5bb731d456c0ee5dd410a0e8817c5540ca544a6702e1f636bdedaa969ac8f"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s250-259-v1\\scans\\L33_seed257_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "f21f49b094dce6f609dfb7bd026cecff554e0c442618f75f8fd0a335de9a972f"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s250-259-v1\\scans\\L33_seed258_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "ab7a4319684496c6d437b79285f8165da9a538caa4ae4f2f11b029a0f7df351e"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s270-279-v1\\scans\\L33_seed276_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "f237b95bd07095cf90930682325c38da3582f3ddd83abd7b5022ff6e7bd4f2b0"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s290-299-v1\\scans\\L33_seed290_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "982ad875f198495ea8506108ad858d3f0c89d2cf41b1e25a88b4de354f5cb44e"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s290-299-v1\\scans\\L33_seed291_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "61f48cd550fe90422e9a9902ae4c091eddbca13ae8315a3bc024bfc3e4622ab0"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s290-299-v1\\scans\\L33_seed293_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "8224e4b81e46eb045c5572454a3604236a24cfae2d228562c343ee0535e604ad"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s290-299-v1\\scans\\L33_seed298_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "f7a7728075877bcbadfe3b278aee39f7455404fc2a8392e40c4c35d5a4dd6f0b"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s300-309-v1\\scans\\L33_seed300_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "2b1672c51a02f8e909aee4adcf6e90022bd594958fa5a34c71bdb6d38ac00fea"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s310-319-v1\\scans\\L33_seed312_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "e9efb33aba0433e72d2afa35ec4249cd02eb266f7cf48af9578c59c8cd8112a4"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s320-329-v1\\scans\\L33_seed323_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "59f8aa4175eb33ec9299f742d43e91c80d6c8200cb4d09a3c956a173e740fd34"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s350-359-v1\\scans\\L33_seed357_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "829c1ddc0d49d81e0e247685d0b4807e91b59d7b2f461bc4612157c3cca5fd82"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s360-369-v1\\scans\\L33_seed366_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "05a139ccb2688212254ed5c2a43235d822eaf27f1529c4d3b0da215b2ab2e568"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s380-389-v1\\scans\\L33_seed384_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "3afdac17cf47ecba44b107ea1b5b5f4f99e324cfd39667705985605fec74f23b"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s380-389-v1\\scans\\L33_seed386_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "f97d66918260f4d9b10d37315c51adadb062424fb142d03199acc5e50b90a01f"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s380-389-v1\\scans\\L33_seed388_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "f557d0d79e5b7696ce1bac31706827bbb08691faf0bbed0884d1343210827d19"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s390-399-v1\\scans\\L33_seed391_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "d75a1ca4cefa5b17f9c8fb63b084a7fe59765b60f857de812affdada50441842"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\L33-reentrant-h23125-oddL-c64-s390-399-v1\\scans\\L33_seed394_h_2.3125_chi64\\continuation_summary.npz",
+      "sha256": "9d09c4d9b1a47c709bc58632a43bf4ebb4692b7671afeb2972c4581da7707b6a"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\reentrant-oddL-L17-L33-v1\\analysis\\cache_L33.npz",
+      "sha256": "247c0a17e3c65b0a82a33131ef9318824c32c541158888061bd4799da1d9485b"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\h1-tau-common-v1\\lifetimes_L16.npz",
+      "sha256": "1f3978ef46990b52edd3de85d078bd81c44231f8d36a5269db4bc91b3a923e8d"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\h1-tau-common-v1\\lifetimes_L17.npz",
+      "sha256": "3d824a208e1a458f140f98583e46eeefa5225524a5ee7c689cfe1ac110529f8b"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\h1-tau-common-v1\\lifetimes_L32.npz",
+      "sha256": "0fcfcd45bcda2e153863f47cf0e6ba228790a28efb3a1b363220bf8e0173b2ca"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\h1-tau-common-v1\\lifetimes_L33.npz",
+      "sha256": "c0f97f334d3391d778b2a3ef90425f9fd54e817d5a4d4a9b51cc44c5575943e4"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\reentrant-oddL-L17-L33-v1\\analysis\\local_magnetization_L17.npz",
+      "sha256": "ebb5bc19e8066c64f8d0622f3940de45b33f12accb33ae2faf3a85ab5b0f7951"
+    },
+    {
+      "path": "results\\random_ising_gamma_ensemble\\reentrant-oddL-L17-L33-v1\\analysis\\local_magnetization_L33.npz",
+      "sha256": "8cf2e6536c32fb4074e330c51ae518dcec01a655f187c9bfdae526444bdfcb13"
+    },
+    {
+      "path": "results\\review_v1\\reentrant-domain-walls-v1\\summary.json",
+      "sha256": "b85e288816954a962120d5a4128a110731275b973f4410464f6bbe25e895a41d"
+    }
+  ],
+  "oddL_added_utc": "2026-10-16T13:53:02.457148+00:00",
+  "oddL_generator": "paper_figures_claude/fig_reentrant/prepare_data_oddL.py",
+  "h1_common_tau_added_utc": "2026-10-16T13:04:50.352821+00:00",
+  "entry_walls_added_utc": "2026-10-19T09:06:41.749598+00:00",
+  "parity_average_sources": {
+    "rings": "results/random_ising_gamma_ensemble/pbc-reentrant-ED-parity-L{16,17}-h25000-s*-v1 (seeds 5000-5999)",
+    "open": [
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s1000-1009-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s1010-1019-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s1020-1029-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s1030-1039-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s1040-1049-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s1050-1059-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s1060-1069-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s1070-1079-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s1080-1089-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s1090-1099-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s700-709-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s710-719-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s720-729-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s730-739-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s740-749-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s750-759-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s760-769-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s770-779-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s780-789-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s790-799-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s800-809-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s810-819-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s820-829-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s830-839-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s840-849-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s850-859-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s860-869-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s870-879-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s880-889-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s890-899-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s900-909-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s910-919-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s920-929-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s930-939-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s940-949-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s950-959-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s960-969-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s970-979-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s980-989-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-h2500-extension1000-c32-s990-999-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s100-104-worker1-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s105-109-worker1-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s110-204-worker1-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s205-299-worker1-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s300-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s301-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s302-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s303-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s304-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s305-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s306-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s307-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s308-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s309-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s310-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s311-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s312-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s313-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s314-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s315-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s316-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s317-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s318-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s319-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s320-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s321-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s322-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s323-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s324-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s325-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s326-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s327-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s328-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s329-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s330-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s331-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s332-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s333-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s334-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s335-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s336-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s337-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s338-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s339-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s340-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s341-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s342-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s343-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s344-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s345-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s346-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s347-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s348-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s349-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s350-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s351-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s352-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s353-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s354-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s355-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s356-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s357-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s358-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s359-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s360-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s361-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s362-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s363-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s364-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s365-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s366-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s367-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s368-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s369-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s370-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s371-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s372-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s373-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s374-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s375-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s376-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s377-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s378-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s379-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s380-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s381-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s382-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s383-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s384-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s385-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s386-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s387-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s388-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s389-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s390-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s391-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s392-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s393-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s394-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s395-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s396-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s397-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s398-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s399-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s400-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s401-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s402-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s403-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s404-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s405-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s406-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s407-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s408-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s409-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s410-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s411-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s412-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s413-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s414-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s415-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s416-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s417-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s418-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s419-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s420-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s421-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s422-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s423-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s424-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s425-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s426-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s427-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s428-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s429-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s430-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s431-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s432-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s433-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s434-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s435-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s436-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s437-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s438-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s439-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s440-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s441-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s442-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s443-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s444-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s445-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s446-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s447-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s448-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s449-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s450-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s451-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s452-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s453-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s454-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s455-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s456-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s457-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s458-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s459-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s460-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s461-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s462-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s463-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s464-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s465-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s466-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s467-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s468-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s469-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s470-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s471-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s472-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s473-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s474-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s475-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s476-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s477-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s478-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s479-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s480-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s481-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s482-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s483-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s484-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s485-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s486-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s487-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s488-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s489-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s490-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s491-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s492-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s493-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s494-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s495-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s496-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s497-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s498-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s499-turing-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s500-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s501-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s502-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s503-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s504-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s505-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s506-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s507-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s508-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s509-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s510-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s511-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s512-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s513-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s514-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s515-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s516-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s517-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s518-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s519-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s520-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s521-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s522-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s523-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s524-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s525-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s526-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s527-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s528-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s529-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s530-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s531-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s532-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s533-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s534-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s535-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s536-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s537-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s538-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s539-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s540-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s541-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s542-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s543-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s544-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s545-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s546-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s547-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s548-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s549-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s550-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s551-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s552-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s553-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s554-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s555-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s556-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s557-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s558-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s559-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s560-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s561-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s562-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s563-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s564-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s565-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s566-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s567-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s568-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s569-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s570-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s571-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s572-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s573-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s574-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s575-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s576-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s577-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s578-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s579-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s580-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s581-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s582-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s583-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s584-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s585-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s586-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s587-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s588-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s589-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s590-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s591-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s592-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s593-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s594-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s595-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s596-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s597-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s598-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s599-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s600-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s601-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s602-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s603-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s604-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s605-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s606-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s607-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s608-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s609-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s610-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s611-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s612-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s613-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s614-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s615-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s616-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s617-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s618-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s619-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s620-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s621-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s622-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s623-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s624-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s625-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s626-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s627-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s628-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s629-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s630-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s631-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s632-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s633-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s634-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s635-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s636-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s637-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s638-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s639-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s640-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s641-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s642-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s643-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s644-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s645-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s646-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s647-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s648-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s649-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s650-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s651-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s652-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s653-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s654-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s655-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s656-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s657-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s658-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s659-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s660-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s661-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s662-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s663-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s664-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s665-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s666-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s667-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s668-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s669-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s670-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s671-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s672-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s673-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s674-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s675-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s676-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s677-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s678-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s679-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s680-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s681-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s682-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s683-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s684-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s685-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s686-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s687-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s688-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s689-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s690-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s691-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s692-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s693-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s694-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s695-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s696-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s697-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s698-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s699-turing-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s700-799-worker1-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L16-reentrant-selectedscreen-fine125-c32-s800-899-worker1-v2\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s0-9-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s10-19-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s100-109-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s110-119-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s120-129-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s130-139-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s140-149-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s150-159-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s160-169-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s170-179-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s180-189-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s190-199-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s20-29-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s200-209-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s210-219-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s220-229-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s230-239-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s240-249-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s250-259-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s260-269-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s270-279-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s280-289-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s290-299-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s30-39-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s300-309-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s310-319-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s320-329-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s330-339-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s340-349-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s350-359-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s360-369-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s370-379-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s380-389-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s390-399-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s40-49-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s50-59-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s60-69-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s70-79-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s80-89-v1\\scans",
+      "results\\random_ising_gamma_ensemble\\L17-reentrant-h2500-oddL-c32-s90-99-v1\\scans"
+    ]
+  },
+  "parity_average_added_utc": "2026-11-03T09:11:50.780705+00:00",
+  "parity_average_generator": "fig_reentrant/prepare_parity_average.py"
+}

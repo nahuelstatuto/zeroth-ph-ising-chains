@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "description": "Exact L=32 chi=128 QC repetitions of the seven chi=64 saturation pairs in the expanded OBC reentrant map.",
+  "source_campaign": "L32-reentrant-map-expanded-c64-s0-49-v1",
+  "pairs": [
+    {"seed": 26, "h": 2.35},
+    {"seed": 38, "h": 2.35},
+    {"seed": 29, "h": 2.375},
+    {"seed": 45, "h": 2.375},
+    {"seed": 8, "h": 2.4375},
+    {"seed": 0, "h": 2.475},
+    {"seed": 25, "h": 2.475}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "launched_pilot",
+  "scientific_role": "Locate the L=24 PBC reentrant cut before freezing a production field and seed count.",
+  "paper_reference": "Lajko et al., Phys. Rev. B 101, 024203 (2020), Fig. 5",
+  "conditions": {
+    "L": 24,
+    "bc": "periodic",
+    "ensemble": "fixed_mean",
+    "h_values": [2.4, 2.425, 2.45, 2.475],
+    "Gamma0_min": 0.0,
+    "Gamma0_max": 0.6,
+    "Gamma0_points": 25,
+    "Gamma0_step": 0.025,
+    "operators": ["Sigmaz", "Sigmax"],
+    "correlators": "raw_nonconnected",
+    "save_mps": "selected"
+  },
+  "field_rationale": {
+    "classical_L24_fixed_mean_PBC_zero_from_2000_seeds": 2.387,
+    "interpretation": "The finite-size wall lies below h=2.5. The pilot brackets cuts just above h_L*(0), where Fig. 5 predicts the reentrant tongue.",
+    "selection_rule": "Choose the production h using physical observables only; topology remains blinded."
+  },
+  "stages": [
+    {
+      "launcher": "cluster/turing/slurm_pbc_reentrant_l24_hpilot_c64_array.sh",
+      "seeds": [0, 1, 2, 3, 4],
+      "chi": 64,
+      "scan_count": 20,
+      "state_count": 500
+    },
+    {
+      "launcher": "cluster/turing/slurm_pbc_reentrant_l24_hpilot_chi128_s0.sh",
+      "seeds": [0],
+      "chi": 128,
+      "scan_count": 4,
+      "state_count": 100,
+      "role": "Pointwise bond-dimension QC against the chi=64 seed-0 scan."
+    }
+  ],
+  "production_gate": "Do not launch 250-300 production seeds until the physical reentrant window and chi choice are frozen from this pilot."
+}

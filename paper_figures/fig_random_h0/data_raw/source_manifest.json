@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-18T21:29:01.949904+00:00",
+  "generator": "paper_figures/fig_random_h0/prepare_data.py (V1)",
+  "conventions": "OBC; fixed_mean; C=Cstag raw; topology on D=1-C; Pauli operators; h=0 exact free fermions",
+  "files": [
+    {
+      "file": "random_h0_peaks.npz",
+      "sha256": "84125c5b4e58e9dca3dc256ea332afc66dc166ca4c4a4e8526e77dea7c9a3791",
+      "size_bytes": 76141
+    },
+    {
+      "file": "random_h0_sdrg_hierarchy.npz",
+      "sha256": "16bb10d79ac83a4b372f04d290f5581e32dc46d0fe968cc5b6b995928162db65",
+      "size_bytes": 68083
+    }
+  ],
+  "sources": [
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\random_L16.npz",
+      "sha256": "0a67f2623db5f013bab35fb1ff715bcbf7aea244203ce0ae14f5abe77da2d3c5"
+    },
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\random_L32.npz",
+      "sha256": "c77d6296c09d14aa26ad99a74482a1dadc53216aa9ecee9d8057d960192cdeac"
+    },
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\random_L64.npz",
+      "sha256": "bcd62b5d78ae9bbe600e1fe00cae8b70b19dab7746c0f72c0e20054d3c21fe63"
+    },
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\random_L128.npz",
+      "sha256": "23a80cf4936ad15236d3e4b357dd1716cdd25e6a909f0e82238047522b462465"
+    },
+    {
+      "path": "results\\review_v1\\free-fermion-h0-v1\\random_L256.npz",
+      "sha256": "d5319862f4898f80c7e92b66d071371c411f6e9ad2dc20df9b17944df290bffc"
+    },
+    {
+      "path": "results\\review_v1\\sdrg-vs-h0-v1\\hierarchy_per_realization.npz",
+      "sha256": "16bb10d79ac83a4b372f04d290f5581e32dc46d0fe968cc5b6b995928162db65"
+    }
+  ]
+}

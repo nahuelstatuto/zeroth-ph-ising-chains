@@ -1,0 +1,19 @@
+# Versions used for the paper (conda environment tn_tda)
+name: tn_tda
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=2.4
+  - scipy=1.17
+  - matplotlib=3.11
+  - h5py=3.16
+  - psutil
+  - networkx=3.6
+  - gudhi=3.13
+  - jupyter
+  - nbformat
+  - nbclient
+  - pip
+  - pip:
+      - physics-tenpy==1.1.0

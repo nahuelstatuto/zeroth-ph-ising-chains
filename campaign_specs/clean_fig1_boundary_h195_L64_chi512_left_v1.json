@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "description": "Left extension of the L=64 OBC chi=512 pseudocritical scan at h=1.95. It closes the unresolved interval below Gamma=0.025 while retaining Gamma=0.020 as a continuity overlap with the completed fine scan.",
+  "source": "Unresolved lower edge in clean-h195-fine-L64-c512-v1; no topology input was used.",
+  "points": [
+    {
+      "h": 1.95,
+      "Gamma_center": 0.01625,
+      "Gamma_values": [
+        0.01,
+        0.0125,
+        0.015,
+        0.0175,
+        0.02,
+        0.0225
+      ]
+    }
+  ]
+}

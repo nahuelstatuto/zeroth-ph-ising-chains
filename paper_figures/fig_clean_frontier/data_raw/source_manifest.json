@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-13T13:09:46.839348+00:00",
+  "generator": "paper_figures_claude/fig_clean_frontier/prepare_data.py",
+  "conventions": "OBC; C=Cstag raw (not connected); topology on D=1-C; Pauli operators",
+  "merge_rule": "duplicate Gamma within (L,h,chi): keep lower-energy state, never average",
+  "reference_boundary": "13 digitized points of Fig. 1 of Lajko et al., PRB 101, 024203 (2020)",
+  "files": [
+    {
+      "file": "clean_frontier_compact.npz",
+      "sha256": "ca2c944ec383504798f1054fc4ae157749268b54331cd56e62793e4806f15ac3",
+      "size_bytes": 589817
+    },
+    {
+      "file": "clean_frontier_oddL_compact.npz",
+      "sha256": "53c65c92fe0675df05ccc3c4b02278c318c92ab9bd4a94b7b9aea3580ae9f9ed",
+      "size_bytes": 1010994
+    },
+    {
+      "file": "clean_frontier_h1_cycle_L31.npz",
+      "sha256": "7a0c5d606cb1f0c9c4ecf3b9010150afd9749fe9a16ed10482f086e40615e4fb",
+      "size_bytes": 429096
+    }
+  ],
+  "sources": [
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L32-fullgamma-h07-c128-turing-v1\\scans\\L32_h_0.7_J1_chi128\\continuation_summary.npz",
+      "sha256": "7a087c5085c3375f096322b9e06a03688dd4cdf8d073670bb6429ad25d2747ab"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L32-fullgamma-h11-c128-turing-v1\\scans\\L32_h_1.1_J1_chi128\\continuation_summary.npz",
+      "sha256": "047cf18f1c8a76c32e99f0044bd64b996454ae89a184edbf649662968328ce96"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L32-fullgamma-h15-c128-turing-v1\\scans\\L32_h_1.5_J1_chi128\\continuation_summary.npz",
+      "sha256": "66d2919ec25f9afadbf4a5eb54243ccd3161eda95fdc8115204829b7cf3ee47d"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L64-H1-active-grid-extension-c128-v1\\scans\\L64_h_1.4_J1_chi128\\continuation_summary.npz",
+      "sha256": "67912bc1fe3695887f6eba57de899041f08e618cd4b7a520159728ba28e60f08"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L64-H1-active-grid-extension-c128-v1\\scans\\L64_h_1.6_J1_chi128\\continuation_summary.npz",
+      "sha256": "34c62ffe1a9d524c30925388b47dae0dbc41844c06427b8fbb39e2c3285fef66"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L64-H1-active-grid-extension-c128-v1\\scans\\L64_h_1.8_J1_chi128\\continuation_summary.npz",
+      "sha256": "46b327c83dc7095862451178193b2c648d7e452740f81478430e964470a5d7d2"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L64-H1-active-grid-extension-c128-v1\\scans\\L64_h_1.95_J1_chi128\\continuation_summary.npz",
+      "sha256": "8e2ff9abcad56cd46e73e1d477b78024f50886b1b2ef5a4430769e0314b2ffd2"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L64-H1-active-grid-extension-c128-v1\\scans\\L64_h_1.9_J1_chi128\\continuation_summary.npz",
+      "sha256": "c667004e1e39a068ff25f9be7cb54c093035bb8b37ccff081ee72d32e84308f9"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L64-fullgamma-newh-fine010-c128-v1\\scans\\L64_h_0.3_J1_chi128\\continuation_summary.npz",
+      "sha256": "0f1ed2ebf4879ea363411ec189d9bfe3b1c6917ca78685311ae93a2ed54d4c71"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L64-fullgamma-newh-fine010-c128-v1\\scans\\L64_h_0.7_J1_chi128\\continuation_summary.npz",
+      "sha256": "954aedacf06533bbc0afd20c8e805bc5ad5c4e92b5e1134cfe55765960e8cc15"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L64-fullgamma-newh-fine010-c128-v1\\scans\\L64_h_1.1_J1_chi128\\continuation_summary.npz",
+      "sha256": "463982510d98c0d24631d709c56f09fb52a757bb6ca8c87400c0baef7c23e808"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L64-fullgamma-newh-fine010-c128-v1\\scans\\L64_h_1.3_J1_chi128\\continuation_summary.npz",
+      "sha256": "c9d96fc24b1093ccf113b1a711b2a4deadee3fd6152f8d9c410cb1c5d50fcc89"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L64-fullgamma-newh-fine010-c128-v1\\scans\\L64_h_1.7_J1_chi128\\continuation_summary.npz",
+      "sha256": "b3020abe1993dda2f05593ea2ac96f8da3aef5d8d974a2c9c6fdbd499e61f3bd"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-lowerext010-c64-worker2-v1\\scans\\L16_h_1.2_J1_chi64\\continuation_summary.npz",
+      "sha256": "44b4f322812eea67064dc70ae81f50de8d99dfe9560b8a3a7191065dff8a1ef3"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-lowerext010-c64-worker2-v1\\scans\\L16_h_1.4_J1_chi64\\continuation_summary.npz",
+      "sha256": "b282430c62125ed01723f8d69fa23f6ad83ddae64fab9baf4ce93d2f480de4a5"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-upperext010-c64-worker2-v1\\scans\\L16_h_1.2_J1_chi64\\continuation_summary.npz",
+      "sha256": "733487a09720e6430234f9670e0575096595d17f3cc0d91abce7ca0dd9896dad"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-upperext010-c64-worker2-v1\\scans\\L16_h_1.4_J1_chi64\\continuation_summary.npz",
+      "sha256": "5c17f0dd8270d8b862a7b5ea5ea233d49ccb181b455bff41dc7a34c64c110d75"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-turing-v1\\scans\\L16_h_0.6_J1_chi64\\continuation_summary.npz",
+      "sha256": "38d8b30365fc52a8cd77d8b3fdd62adeb0f82e0b56a70d069f2d628def93eeba"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-turing-v1\\scans\\L16_h_1.2_J1_chi64\\continuation_summary.npz",
+      "sha256": "ec3950c12f292679329e373580d06dae9f538ae6cde965a7d61a5c35b5e23cac"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-turing-v1\\scans\\L16_h_1.8_J1_chi64\\continuation_summary.npz",
+      "sha256": "84236635f5adfe9152a54ed015112f1bb63243b076fff5d2a678988356969ca1"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-worker1-v1\\scans\\L16_h_0.2_J1_chi64\\continuation_summary.npz",
+      "sha256": "cabb1173532b80e467da8975192aacd2b3ef8804abd4ce5e7b667089da4546c1"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-worker1-v1\\scans\\L16_h_0.8_J1_chi64\\continuation_summary.npz",
+      "sha256": "c81d39d98aff052084b72a2c971228626f53c3b1e69b23b01e4b00364ded8726"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-worker1-v1\\scans\\L16_h_1.4_J1_chi64\\continuation_summary.npz",
+      "sha256": "66f4a558334930caa648b3fdb8b584f66943de894e13ccdb668c8db62172c49e"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-worker1-v1\\scans\\L16_h_1.9_J1_chi64\\continuation_summary.npz",
+      "sha256": "13fa13a36b90ac9d38dc9a891e4de49f2b63ed85eab9ab733ac6cf86bbe8b093"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-worker2-v1\\scans\\L16_h_0.4_J1_chi64\\continuation_summary.npz",
+      "sha256": "fb8b4eaa08d008dd1d2ceb433d8f5ec1406f6d4b4ee08b7dbe830608511aeaad"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-worker2-v1\\scans\\L16_h_1.6_J1_chi64\\continuation_summary.npz",
+      "sha256": "0d1c2ede9a6d7cefc16612105983bcf7bf3fb98734e3404a7ebd7d4e90c4233c"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-worker2-v1\\scans\\L16_h_1.95_J1_chi64\\continuation_summary.npz",
+      "sha256": "5efe07c7c838658038b152a0a2a4afc22801fb151030cbec70f35b48d3ed8d00"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L16-wide010-c64-worker2-v1\\scans\\L16_h_1_J1_chi64\\continuation_summary.npz",
+      "sha256": "b2b5bcefc2fdc09b8d4ba7697593b0154e2fa9d77435b5b58765c666a5d962ed"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-followup-c128-turing-v1\\scans\\L32_h_1.2_J1_chi128\\continuation_summary.npz",
+      "sha256": "30197270a431a0313b8989b03ef4f290255c8949d4a72e5a498aa8b8a39fd378"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-followup-c128-turing-v1\\scans\\L32_h_1_J1_chi128\\continuation_summary.npz",
+      "sha256": "d8ca1148ba0c5e1478be5121eacba33c2a5c08dfe563bf474e26c60d6d02287d"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-h19-c256-turing-v1\\scans\\L32_h_1.9_J1_chi256\\continuation_summary.npz",
+      "sha256": "5f82df2a2ff4d4f7040e8a60f3077f8379c97a3a9fef94b1032b76695455ba7c"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-a-v1\\scans\\L32_h_0.2_J1_chi128\\continuation_summary.npz",
+      "sha256": "8a4f9e27ea62d26ea039d80ac3eb93b13c3fbbde8d2ff9021842954330ac9d78"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-a-v1\\scans\\L32_h_0.4_J1_chi128\\continuation_summary.npz",
+      "sha256": "83fbb44de6ebe59da08fb7d77037bc838f9b4e509a694d9da469a44befa9838f"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-a-v1\\scans\\L32_h_0.6_J1_chi128\\continuation_summary.npz",
+      "sha256": "0226ca4dc0595cf758f08fbea8b4058bd2c9b952477728924f610d0836626253"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-b-v1\\scans\\L32_h_0.8_J1_chi128\\continuation_summary.npz",
+      "sha256": "1f4a4971a9c2d081f0dad43e10ef2821bf5b8acb9285bddeeb6852c2185f72ff"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-b-v1\\scans\\L32_h_1.2_J1_chi128\\continuation_summary.npz",
+      "sha256": "c76496c3c65e6e574e398686675b4a1bac00215d78c1c6e2f490ba23cfef335c"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-b-v1\\scans\\L32_h_1_J1_chi128\\continuation_summary.npz",
+      "sha256": "c9d1a43077cb03e2594e9461a3cc6b414fb72775cad36b024c02a6318a9b6e79"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-c-v1\\scans\\L32_h_1.4_J1_chi128\\continuation_summary.npz",
+      "sha256": "1742548996a07c469d9896790363137843a0984f86d8507b81d35867130b7aa8"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-c-v1\\scans\\L32_h_1.6_J1_chi128\\continuation_summary.npz",
+      "sha256": "b96b6a3355e642053da66faf05420130723adeea4d55266ab54dd7e52fc521af"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-c-v1\\scans\\L32_h_1.8_J1_chi128\\continuation_summary.npz",
+      "sha256": "36c615da65ea30b4aa33f74c1532bcf6aea1908ce311e97463591a27e13f06a3"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-d-v1\\scans\\L32_h_1.95_J1_chi128\\continuation_summary.npz",
+      "sha256": "d1375cb45e2c38357cbd666f46e49557ae7837000982214f0908499382c42e2d"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L32-wide010-c128-worker2-d-v1\\scans\\L32_h_1.9_J1_chi128\\continuation_summary.npz",
+      "sha256": "e74aafb2b48e7c396678c5ac9bead5ce77034c9c569469284625b9314658455f"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L64-h08-lower-c128-worker1-v1\\scans\\L64_h_0.8_J1_chi128\\continuation_summary.npz",
+      "sha256": "403b4d3b18db933f5300445e8c41c73e5120e537980688da843081862b575e28"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L64-h10-h12-upper-c128-worker2-v1\\scans\\L64_h_1.2_J1_chi128\\continuation_summary.npz",
+      "sha256": "d2735708e211c4ca06f35f4dff56e81f702c1c53f3c1d6e9344554dc22cce8dd"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-L64-h10-h12-upper-c128-worker2-v1\\scans\\L64_h_1_J1_chi128\\continuation_summary.npz",
+      "sha256": "9e787062e5d6c3016e777ade10bcad43bc5848bf3bfceca04f7db08989d0207d"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_0.2_J1_chi128\\continuation_summary.npz",
+      "sha256": "9b8082f643d299a758946c95ff870c35b66e67e6d6e264bef5d4e2c00267e922"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_0.4_J1_chi128\\continuation_summary.npz",
+      "sha256": "9fd404a5c68dfd90f282aecf6509a228b26390fb133689fa3725ffe92f69e4c1"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_0.6_J1_chi128\\continuation_summary.npz",
+      "sha256": "9f8be2396bf18e97c0b39599c1f1c202b0d59b3049513e99096a737e61a01c6c"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_0.8_J1_chi128\\continuation_summary.npz",
+      "sha256": "1f0924422c25a7658b70c2bff38762de079374c381c17d1064b8cf489238e45e"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_1.2_J1_chi128\\continuation_summary.npz",
+      "sha256": "18a37df78f43d01e6b94f44417021229779c19e6e5fd784075b5d9f19ef3961f"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_1.4_J1_chi128\\continuation_summary.npz",
+      "sha256": "7100d0f023cf1aad289fc51dcb58b97a391f21111eb3809a9df003d293d163cf"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_1.6_J1_chi128\\continuation_summary.npz",
+      "sha256": "69b777438d6aec7abb369a62ae452487ab7f36bbe0f1c04ae72434a420e06886"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_1.8_J1_chi128\\continuation_summary.npz",
+      "sha256": "eb330f3a8efb98c5e506e97968892bf94e11f92a1298fc8895f0f5d4a9213442"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_1.95_J1_chi128\\continuation_summary.npz",
+      "sha256": "82be0d5934bf32bffaaabe42ef5cc8944ae5e7a9d1b8b21199cb6a5f90381b07"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_1.9_J1_chi128\\continuation_summary.npz",
+      "sha256": "d039129bf3bf528e6f5f25f764687fe0bfd35b3a24cdd1cb0572e486ef3415d1"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-bound-L64-c128-v1\\scans\\L64_h_1_J1_chi128\\continuation_summary.npz",
+      "sha256": "c8a2ddcd9049258f90d75451a48aedf4583b54a2d42589c853eb5264e2c49bfc"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-refine-L64-c128-v1\\scans\\L64_h_0.2_J1_chi128\\continuation_summary.npz",
+      "sha256": "9f482027201bb9b14a09f6a5c9d4d6c9412a1102cbbb7e97fec1e322971f6467"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-refine-L64-c128-v1\\scans\\L64_h_0.4_J1_chi128\\continuation_summary.npz",
+      "sha256": "a535704269f04894670f316d22ea3455204105d2dd005e73dbd81703d7eb904a"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-refine-L64-c128-v1\\scans\\L64_h_0.6_J1_chi128\\continuation_summary.npz",
+      "sha256": "6a0ec922b655c496ba7d99ceced014a0c273c45f2d75726eff4e19535b22dcb9"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-refine-L64-c128-v1\\scans\\L64_h_1.4_J1_chi128\\continuation_summary.npz",
+      "sha256": "880577bbfa7c5cb228fd07ca3974dabf5528b1c74efa4d73ebd18d42342a3f76"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-refine-L64-c128-v1\\scans\\L64_h_1.6_J1_chi128\\continuation_summary.npz",
+      "sha256": "0a914ccc1a8114260a8e7bc0afaf69ab346c8029bec8404ff427061f18343171"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-refine-L64-c128-v1\\scans\\L64_h_1.8_J1_chi128\\continuation_summary.npz",
+      "sha256": "fbf5cbe3aa0f9f2c0a28c8ed04938c8d6e5493d78c672d06a1b3181d206768de"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-refine-L64-c128-v1\\scans\\L64_h_1.9_J1_chi128\\continuation_summary.npz",
+      "sha256": "2a8c7944a2e9cdb24e5ae40a10d8d465ee45034e3ca058fc4384c80b2176da2c"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-refine2-L64-c128-v1\\scans\\L64_h_0.6_J1_chi128\\continuation_summary.npz",
+      "sha256": "c60b9d98eeea59c038f79b70c0c674040466464b444b3812aaaf8cb69aebbb37"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-fig1-refine2-L64-c128-v1\\scans\\L64_h_1.9_J1_chi128\\continuation_summary.npz",
+      "sha256": "23e3017cfea43daf9ab004c1f2b73d69f00ec9c5ca2ec2dd6030355b32561068"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-h195-fine-L64-c512-v1\\scans\\L64_h_1.95_J1_chi512\\continuation_summary.npz",
+      "sha256": "f3d12e0f512cb17d332a67afb58dde2ea6424ee414e02d828a0d2dc20c70def2"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-h195-leftfine-L64-c512-turing-v1\\scans\\L64_h_1.95_J1_chi512\\continuation_summary.npz",
+      "sha256": "2c177b03b29fcfb9c039c3f10d308efb6f1354f8e82d6fa4110a2537a9d9b10c"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h11-c128-v1\\scans\\L31_h_1.1_J1_chi128\\continuation_summary.npz",
+      "sha256": "6ac5a95e0df8a7e85848a9bfee770d29cdb1e3599e6b825a23a9685a46f71025"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h12-c128-v1\\scans\\L31_h_1.2_J1_chi128\\continuation_summary.npz",
+      "sha256": "2f9bf0fcb8f051f5e8ee3f3adfecfebb964540cebc0697b6d7f345cd72149d98"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h13-c128-v1\\scans\\L31_h_1.3_J1_chi128\\continuation_summary.npz",
+      "sha256": "1ade5cbb10f4c984e83e1dabe0a1401d5c7febc35984241be75d2449787b2cfd"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h14-c128-v1\\scans\\L31_h_1.4_J1_chi128\\continuation_summary.npz",
+      "sha256": "ed2774c970c160f5c025674c77687b010396f4389fdb9172de43458872a540ea"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h15-c128-v1\\scans\\L31_h_1.5_J1_chi128\\continuation_summary.npz",
+      "sha256": "8177c179952db9b31f427f499e022cf3cfb0cd34c26d24448f998e00cf9d33b2"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h16-c128-v1\\scans\\L31_h_1.6_J1_chi128\\continuation_summary.npz",
+      "sha256": "b2d919c98591596b42b3024bb64676d831b7ab6544d26bd4416169c51726da10"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h17-c128-v1\\scans\\L31_h_1.7_J1_chi128\\continuation_summary.npz",
+      "sha256": "0ebd750ba98d834fa48747c20f834b90531e30d961384f4dd7ceeda7c763022c"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h18-c128-v1\\scans\\L31_h_1.8_J1_chi128\\continuation_summary.npz",
+      "sha256": "afa883c6c8fc19a8e5643a5f472b2682d927288f1ab9a7026c2460859c51dbae"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h19-c128-v1\\scans\\L31_h_1.9_J1_chi128\\continuation_summary.npz",
+      "sha256": "283da42b2e6867782ae36d3c1711717d57745d0f3e220accd3ba77696a0ae60c"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h11-c128-v1\\scans\\L63_h_1.1_J1_chi128\\continuation_summary.npz",
+      "sha256": "e519222c141904dcb8958b54feab5ce3211323a6c4db7f8bb51d7f04d131024e"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h12-c128-v1\\scans\\L63_h_1.2_J1_chi128\\continuation_summary.npz",
+      "sha256": "79c80c1f32c051495f3c7ff28e77af32f72515193aa467f3db38481a48ff3a60"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h13-c128-v1\\scans\\L63_h_1.3_J1_chi128\\continuation_summary.npz",
+      "sha256": "0f716076c24387e8ce72d364e99e16274415b530d6947c276834d031c3a02342"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h14-c128-v1\\scans\\L63_h_1.4_J1_chi128\\continuation_summary.npz",
+      "sha256": "88dd98b427193374436a6014a17117104b2ebaa97ab408d71189dd4952e1e925"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h15-c128-v1\\scans\\L63_h_1.5_J1_chi128\\continuation_summary.npz",
+      "sha256": "045d5a2b600cccb90c6f57c580c23378b834af163e9073ce9f9c90396dfb71bf"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h16-c128-v1\\scans\\L63_h_1.6_J1_chi128\\continuation_summary.npz",
+      "sha256": "a0a90c442ddd10afff713443f0b5c79d871a3dd8d6bad3f93b00aaa31a7cff8c"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h17-c128-v1\\scans\\L63_h_1.7_J1_chi128\\continuation_summary.npz",
+      "sha256": "e7b2367feefed564e7a0439b69b441947898a49ea3bf50e710897b0ecc666e60"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h18-c128-v1\\scans\\L63_h_1.8_J1_chi128\\continuation_summary.npz",
+      "sha256": "71672d20021a89bf0ad2b0bbfa59f08eaccb2f266f720eb969d2543739511ddf"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h19-c128-v1\\scans\\L63_h_1.9_J1_chi128\\continuation_summary.npz",
+      "sha256": "80bbad76f4df00684b46328e962e5b7e477f7fe6eccfe26d77a2db9d529080f6"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h11-c128-v1\\scans\\L31_h_1.1_J1_chi128\\selected_mps.h5",
+      "sha256": "eba369355c2de0ee50e770c43b77dc194474b3104328f58de9972a2fa8eb854a"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h12-c128-v1\\scans\\L31_h_1.2_J1_chi128\\selected_mps.h5",
+      "sha256": "a9fbd96d495d58768232c59ba4ca0a589583ee94ea041a651dae26e0f2a602cc"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h13-c128-v1\\scans\\L31_h_1.3_J1_chi128\\selected_mps.h5",
+      "sha256": "d40d5129069d313616b796a37f461ca41e96bd5f2e4b2a5f4362785643cc7250"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h14-c128-v1\\scans\\L31_h_1.4_J1_chi128\\selected_mps.h5",
+      "sha256": "06a1091873e5ec4b0a688a26ae768519eab60c4a704c3250dc4b673814d99e92"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h15-c128-v1\\scans\\L31_h_1.5_J1_chi128\\selected_mps.h5",
+      "sha256": "d29e5f91283250cef117db584014dca55327187fbc3c1a40d38abd81f05806c0"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h16-c128-v1\\scans\\L31_h_1.6_J1_chi128\\selected_mps.h5",
+      "sha256": "d720afafa811a696b06759b65148dc5315c607753ed6c27beff63c0e193fc03a"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h17-c128-v1\\scans\\L31_h_1.7_J1_chi128\\selected_mps.h5",
+      "sha256": "09a20c75f35dc74a52b31ac77dea9a6fab4a16c97077318b35ac0c62cb9a995e"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h18-c128-v1\\scans\\L31_h_1.8_J1_chi128\\selected_mps.h5",
+      "sha256": "6820bc64f9ea869e9895b8260891e8a089d40800ed2c23276629f4acc10b100c"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h19-c128-v1\\scans\\L31_h_1.9_J1_chi128\\selected_mps.h5",
+      "sha256": "de5f7599b01743e58a6ca5ed8bf7ebfc96b864ff999b89bd8093d1f3a6a0902d"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h11-c128-v1\\scans\\L63_h_1.1_J1_chi128\\selected_mps.h5",
+      "sha256": "e9c5290d7e5cd677cdc63faf52808635ee3560a548ba58cfef04960322255927"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h12-c128-v1\\scans\\L63_h_1.2_J1_chi128\\selected_mps.h5",
+      "sha256": "ec08fb298e783350fb76b2a241be387095bce46672fda15121a0d68c8d48a492"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h13-c128-v1\\scans\\L63_h_1.3_J1_chi128\\selected_mps.h5",
+      "sha256": "67e3608c48ddff4585d8945db1a5dcc49b62d76564dcefff3887e43b69d1c50f"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h14-c128-v1\\scans\\L63_h_1.4_J1_chi128\\selected_mps.h5",
+      "sha256": "0bb52829d6d6d125a6117b6a9b3e96c82d6b209ee9b5a5a7c964d70e396f0bda"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h15-c128-v1\\scans\\L63_h_1.5_J1_chi128\\selected_mps.h5",
+      "sha256": "f3762262c0b510c8532af5eb757f6f1721ad11de642a229970bbaa06d73ade19"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h16-c128-v1\\scans\\L63_h_1.6_J1_chi128\\selected_mps.h5",
+      "sha256": "aeebe67ea4672cf2cbb3db5f3ea296cb3dc307aedce83a8b1c44c439b9659934"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h17-c128-v1\\scans\\L63_h_1.7_J1_chi128\\selected_mps.h5",
+      "sha256": "724eabe2620d04dd5f4e5aebfd50520635bd9145257d79fe1f992ab0ff7be81a"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h18-c128-v1\\scans\\L63_h_1.8_J1_chi128\\selected_mps.h5",
+      "sha256": "698e46b2c0e599aa337569876a0df1b0fa2029f59d8a1df83afc84f7642426b5"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-fullgamma-h19-c128-v1\\scans\\L63_h_1.9_J1_chi128\\selected_mps.h5",
+      "sha256": "69b4521cb19ec84dc5befa7d400c22cc2349f3dc28b5256fe8b4d342d734516a"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h00-c128-v1\\scans\\L31_h_0_J1_chi128\\continuation_summary.npz",
+      "sha256": "ede8c9d9089bf5a41c92c7cafa62dff9a55af8638cd2e338a420fea76e755ca8"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h00-c128-v1\\scans\\L31_h_0_J1_chi128\\selected_mps.h5",
+      "sha256": "ca6053343f70acc016e4fc9474e53fb5ca1ca3ef1d345bf9c2f8de6c32738c17"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h05-c128-v1\\scans\\L31_h_0.5_J1_chi128\\continuation_summary.npz",
+      "sha256": "103a6c207aacb11e873637be477abcd712fd2866185a586654dff8a331822b1f"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L31-oddL-fullgamma-h05-c128-v1\\scans\\L31_h_0.5_J1_chi128\\selected_mps.h5",
+      "sha256": "c9de81f01d30f827d05e850062fc2b28705db8d75420bb47a7eb625ad945aba2"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-cmp-h193-c128-v1\\scans\\L63_h_1.93_J1_chi128\\continuation_summary.npz",
+      "sha256": "03ca06a7ff12a2f920411ead40af971b8e8064750d0ad7c1807965cad2cc9a12"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-cmp-h193-c128-v1\\scans\\L63_h_1.93_J1_chi128\\selected_mps.h5",
+      "sha256": "82cf77a4d223a48337b18a903a7070256e1a8c11d36e9ef4330ee2b28a49074e"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-cmp-pilot-h195-c128-v1\\scans\\L63_h_1.95_J1_chi128\\continuation_summary.npz",
+      "sha256": "20e4cf0cbadfd9093490e802ce9f19e11ac7eb254ab738eaa2b9b3101f268c4e"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-cmp-pilot-h195-c128-v1\\scans\\L63_h_1.95_J1_chi128\\selected_mps.h5",
+      "sha256": "00dfca89385f741780dada0fd4d84b06c52ed00e02d99201df0bbf06ad2e0ab9"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-cmp-h196-c128-v1\\scans\\L63_h_1.96_J1_chi128\\continuation_summary.npz",
+      "sha256": "e72d84ba4461a5165909e1ce85e808243f25f6af2525159b0a03d265791ea07f"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-cmp-h196-c128-v1\\scans\\L63_h_1.96_J1_chi128\\selected_mps.h5",
+      "sha256": "d102a598ce0854ec3cff07d817583dd0423358128c93e5831963f914142ecbbd"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-cmp-h198-c128-v1\\scans\\L63_h_1.98_J1_chi128\\continuation_summary.npz",
+      "sha256": "178faaace59397be1d0d69dbe863c4eb4160caf0d0961f763cc53be6ebf0a803"
+    },
+    {
+      "path": "results\\clean_ising_gamma_campaign\\clean-L63-oddL-cmp-h198-c128-v1\\scans\\L63_h_1.98_J1_chi128\\selected_mps.h5",
+      "sha256": "c74542e1db2d841c7da687cca43572cf766d4a279f00c2da1572561cc7401090"
+    }
+  ],
+  "oddL_added_utc": "2026-10-16T07:24:53.981171+00:00",
+  "oddL_generator": "paper_figures_claude/fig_clean_frontier/prepare_data_oddL.py",
+  "h1_cycle_added_utc": "2026-10-19T12:24:38.518689+00:00"
+}

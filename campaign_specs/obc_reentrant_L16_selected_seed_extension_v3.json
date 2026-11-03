@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "cancelled_wrong_boundary_condition",
+  "created_date": "2026-09-23",
+  "objective": "Increase the topology-blind OBC L16 selected-screen cohort from 600 to 2100 seeds and improve the expected precision of the conditioned H0 detector estimate.",
+  "seeds": [700, 2199],
+  "seed_count": 1500,
+  "disjoint_worker_allocation": {
+    "ID74118": [700, 999],
+    "SECOND_PC": [1000, 1599],
+    "TURING": [1600, 2199]
+  },
+  "campaign_families": {
+    "ID74118": "L16-reentrant-selectedscreen-fine125-c32-sSTART-STOP-worker1-v2",
+    "SECOND_PC": "L16-reentrant-selectedscreen-fine125-c32-sSTART-STOP-worker2-v1",
+    "TURING": "L16-reentrant-selectedscreen-fine125-c32-sSEED-turing-v3"
+  },
+  "launchers": {
+    "ID74118": "scripts/enqueue_obc_reentrant_selectedscreen_worker1_v2.cmd",
+    "SECOND_PC": "scripts/enqueue_obc_reentrant_selectedscreen_worker2_v1.cmd",
+    "TURING": "cluster/turing/slurm_l16_reentrant_selectedscreen_s1600_2199_array.sh"
+  },
+  "submission": {
+    "ID74118": "two 100-seed blocks active and one queued under the resource-aware monitor",
+    "SECOND_PC": "six 100-seed blocks queued for its independent monitor",
+    "TURING": "Slurm job 2850, array 0-199%3",
+    "turing_launcher_sha256": "24ae3d62fc19eb798ee02462eb3a6c1fb040ee26a59b9f2f5008b927a49638f6"
+  },
+  "conditions": {
+    "L": 16,
+    "bc": "open",
+    "ensemble": "fixed_mean",
+    "chi_max": 32,
+    "h": 2.5,
+    "Gamma0_min": 0.0,
+    "Gamma0_max": 0.6,
+    "Gamma0_points": 49,
+    "mps_save_policy": "selected",
+    "topological_matrix": "C=Cstag"
+  },
+  "selection_rule": "Frozen topology-blind physical rule used for seeds 100-699; do not inspect topology when selecting seeds.",
+  "power_rationale": {
+    "current_selected": 61,
+    "current_total": 600,
+    "observed_selection_rate": 0.1016666667,
+    "expected_new_selected": 152.5,
+    "expected_final_selected": 213.5,
+    "approximate_95_percent_half_width_for_detector_rate_0.705": 0.0612
+  },
+  "turing_array_mapping": "Array IDs 0-199 map to base seeds 1600-1799; each task then runs base, base+200 and base+400 sequentially to respect ladon MaxSubmitPU=256 and MaxArraySize; concurrency cap 3 preserves the five older L128/L256 tasks.",
+  "analysis_policy": "Keep worker provenance, freeze the existing selection rule, analyze only complete cohorts, and report pooled and worker-stratified results. Do not infer a thermodynamic boundary from L=16."
+}
