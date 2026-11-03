@@ -11,7 +11,8 @@ authors:
 license: MIT
 version: "1.0.0"
 date-released: "2026-11-03"
-# doi: 10.5281/zenodo.XXXXXXX   (fill in after the Zenodo release)
+doi: 10.5281/zenodo.23915648   # concept DOI, resolves to the latest version (v1.0: 10.5281/zenodo.23915649)
+repository-code: "https://github.com/nahuelstatuto/zeroth-ph-ising-chains"
 preferred-citation:
   type: article
   title: "Zeroth persistent homology of ground-state correlations at clean and disordered quantum transitions"
