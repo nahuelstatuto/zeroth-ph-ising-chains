@@ -1,3 +1,18 @@
+# Fig. 1 — estado para el envío a PRE (2026-11-24)
+
+**Realización cambiada a seed 13** (antes 43, copia completa en `drafts/superseded_seed43/`). Motivo: añadir
+los clústeres del SDRG al esquema. Los nodos se colorean por clúster SDRG (decimación con J_i y Γ_i, sin
+correlaciones; paleta fría para no confundir con el naranja). Seed 13 es una de las 50 seeds de la misma
+campaña (L=16, χ=64, OBC, fixed_mean, Γ₀=0.95, sin flags) cuyos 5 clústeres SDRG son todos subárboles del
+árbol H0, y en la instantánea (ii), 8 componentes, la filtración coincide exactamente con la partición SDRG
+(comprobado en el notebook, que falla si deja de ser así). Ninguna de las 50 seeds recupera exactamente un
+clúster no contiguo a Γ₀=0.95 (34/50 tienen uno), así que el caso no contiguo queda para `fig_h0_clusters`.
+Seed 13 no tiene merges con |i−j|≥2, por lo que el azul ya no aparece. Instantáneas a 12, 8, 3 y 1
+componentes (ε=0.33, 0.39, 0.51, 0.60), barras 0.27–0.57, Γ₀*=0.836. Fuente final: `fig_schematic.ipynb`
+(partiendo de la edición manual: letras en negrita, títulos sin letra). Salida `output/fig1_schematic.pdf`.
+
+---
+
 # Fig. 1 (V1) — de un estado a la velocidad del landscape
 
 **Estado en v1 (2026-10-19).** Figura cerrada. **Fuente final: `fig_schematic.ipynb`**, editado a mano por
